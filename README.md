@@ -2,7 +2,7 @@
 
 Let's Be Friends is a turn-based game where the objective is to make your opponent's pet happy. The user competes and employs strategies to win against their opponent, choosing what moves, treats, and toys will be used in order to secure victory.
 
-As the main objective of the game is to be happy, players start out with their pets' HP (Happiness points) being set to 0. Throughout the interaction, moves made by the player and the opponent will affect their respective pets' HPs. To win, the user will have to win 3 rounds against their opponent. If the user loses one round, the game is over.
+As the main objective of the game is for the pets to be happy, players start out with their pets' happiness meter being set to 0. Throughout the interaction, moves made by the player and the opponent will affect each other's pets' happiness meter. To win, the user will have to win 3 rounds against their opponent. If the user loses one round, the game is over. The user will, at any point during the game, be able to leave the game if they choose to. Winning is great, but the main idea for this game is that everyone becomes happy and hopefully strives to make one another happy.
 
 # Functionality
 
@@ -11,6 +11,7 @@ In Let's Be Friends, users will be able to:
 - Use their keyboard to select what decision they want to make
 - React to the moves and decisions made by the opponent, which will be controlled by the computer
 - Hover over options to see what each move, treat, and toy does, in detail
+- Leave the game while the game is being played
 - Employ strategies in order to win through the use of moves, treats, and toys
 
 
@@ -20,7 +21,8 @@ In addition, this project will include:
 
 # Wireframe
 
-<img width="1020" alt="Screenshot 2023-03-09 at 11 54 21 AM" src="https://user-images.githubusercontent.com/121586271/224098827-0f634e18-71ff-453a-881e-430ae4412786.png">
+<img width="860" alt="Screenshot 2023-03-09 at 2 02 03 PM" src="https://user-images.githubusercontent.com/121586271/224128783-731c2de7-1f7b-49bc-a68d-7b15c854b0e6.png">
+
 
 - The Game's title will be presented on the top of the screen.
 - The navigation list will include links to my GitHub and LinkedIn profiles
@@ -32,19 +34,19 @@ In addition, this project will include:
 # Technologies, Libraries, APIs
 
 This project will be implemented with these technologies:
-- Canvas API in order to display and render the game screen
-- Webpack to bundle Javascript files
-- npm to manage dependencies of the project 
+- `Canvas API` in order to display and render the game screen
+- `Webpack` and `Babel` to bundle Javascript code
+- `npm` to manage dependencies of the project 
 
 # Timeline
 
-- Thursday Afternoon: Setup the project, sort out webpack, and research the Canvas API. Get the files up and running and figure out how the files interact with each other.
-- Friday: Work on the game logic to figure out what each decision does and how it is coded.
-- The Weekend: Finish up on the logic for the game and research animation to make the visuals of the game pop.
-- Monday: Get the game to work on the screen and for the user to be able to play the game to its entirety. 
-- Tuesday: Devote time to working on the styling of the game, making sure the presentation is great and fits my vision for the game.
-- Wednesday: Improve styling of the game, see if I can expand the game if the timeline is going according to plan.
-- Thursday: Deploy project to GitHub. Look over all the files and make revisions as needed.
+- ***Thursday Afternoon***: Setup the project, sort out webpack, and research the Canvas API. Get the files up and running and figure out how the files interact with each other.
+- ***Friday***: Work on the game logic to figure out what each decision does and how it is coded.
+- ***The Weekend:*** Finish up on the logic for the game and research animation to make the visuals of the game pop.
+- ***Monday:*** Get the game to work on the screen and for the user to be able to play the game to its entirety. 
+- ***Tuesday:*** Devote time to working on the styling of the game, making sure the presentation is great and fits my vision for the game.
+- ***Wednesday:*** Improve styling of the game, see if I can expand the game if the timeline is going according to plan.
+- ***Thursday:*** Deploy project to GitHub. Look over all the files and make revisions as needed.
 
 
 # Bonus Features
