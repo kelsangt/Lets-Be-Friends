@@ -17,6 +17,7 @@ In Let's Be Friends, users will be able to:
 
 In addition, this project will include:
 - An instructions window that will explain the game and the rules of the game
+- Animations for the pets
 - A README
 
 # Wireframe
@@ -25,10 +26,10 @@ In addition, this project will include:
 
 
 - The Game's title will be presented on the top of the screen.
-- The navigation list will include links to my GitHub and LinkedIn profiles
+- The Nav links will include links to my GitHub and LinkedIn profiles
 - The game itself will be in the middle of the screen, composed of the portrayal of the user's pet, the opponent's pet, their respective stats, game prompt box, and user's decisions box.
-- The Game prompts/Moves box will update to ask the user to make a move, and display the moves, treats, and toys as the user selects one of them from the decisions box on the right.
-- The Decisions box contains different choices for moves, treats, and toys.
+- The Game prompts/Moves box will update to ask the user to make a move, and display the moves, treats, toys as the user selects one of them from the decisions box on the right.
+- The Decisions box contains different choices for moves, treats, and toys. It also contains the ability for the user to leave the game.
 
 
 # Technologies, Libraries, APIs
@@ -40,16 +41,16 @@ This project will be implemented with these technologies:
 
 # Timeline
 
-- ***Thursday Afternoon***: Setup the project, sort out webpack, and research the Canvas API. Get the files up and running and figure out how the files interact with each other.
-- ***Friday***: Work on the game logic to figure out what each decision does and how it is coded.
-- ***The Weekend:*** Finish up on the logic for the game and research animation to make the visuals of the game pop.
-- ***Monday:*** Get the game to work on the screen and for the user to be able to play the game to its entirety. 
-- ***Tuesday:*** Devote time to working on the styling of the game, making sure the presentation is great and fits my vision for the game.
-- ***Wednesday:*** Improve styling of the game, see if I can expand the game if the timeline is going according to plan.
-- ***Thursday:*** Deploy project to GitHub. Look over all the files and make revisions as needed.
+- **Thursday Afternoon**: Setup the project, sort out webpack, and research the Canvas API. Get the files up and running and figure out how the files interact with each other.
+- **Friday**: Work on the game logic to figure out what each decision does and how it is coded.
+- **The Weekend:** Finish up on the logic for the game and research animation to make the visuals of the game pop.
+- **Monday:** Get the game to work on the screen and for the user to be able to play the game to its entirety. 
+- **Tuesday:** Devote time to working on the styling of the game, making sure the presentation is great and fits my vision for the game.
+- **Wednesday:** Improve styling of the game, see if I can expand the game if the timeline is going according to plan.
+- **Thursday:** Deploy project to GitHub pages. Look over all the files and make revisions as needed.
 
 
 # Bonus Features
 
-- This game can be expanded by adding a 2D walking aspect: The user model can walk around a town, interacting with other people to begin interactions. This will then transition to the competitive interaction mode, where the user makes decisions.
+- This game can be expanded by adding a 2D walking aspect: The user model can walk around a town, interacting with other people to begin interactions. This will then transition to the competitive interaction mode, where the user makes decisions in order to win the interaction.
 - Another expansion is the ability to have multiple pets and swap between them during the competition
