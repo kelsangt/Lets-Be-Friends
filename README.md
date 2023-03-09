@@ -4,6 +4,8 @@ Let's Be Friends is a turn-based game where the objective is to make your oppone
 
 As the main objective of the game is to be happy, players start out with their pets' HP (Happiness points) being set to 0. Throughout the interaction, moves made by the player and the opponent will affect their respective pets' HPs. To win, the user will have to win 3 rounds against their opponent. If the user loses one round, the game is over.
 
+# Functionality
+
 In Let's Be Friends, users will be able to:
 
 - Use their keyboard to select what decision they want to make
@@ -47,4 +49,5 @@ This project will be implemented with these technologies:
 
 # Bonus Features
 
-This game can be expanded by adding a 2D walking aspect, where the user model can walk around a town, interacting with other people to begin interactions. This will then transition to the competitive interaction mode, where the user makes decisions.
+- This game can be expanded by adding a 2D walking aspect: The user model can walk around a town, interacting with other people to begin interactions. This will then transition to the competitive interaction mode, where the user makes decisions.
+- Another expansion is the ability to have multiple pets and swap between them during the competition
