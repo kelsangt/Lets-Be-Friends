@@ -22,7 +22,8 @@ In addition, this project will include:
 
 # Wireframe
 
-<img width="860" alt="Screenshot 2023-03-09 at 2 02 03 PM" src="https://user-images.githubusercontent.com/121586271/224128783-731c2de7-1f7b-49bc-a68d-7b15c854b0e6.png">
+<img width="860" alt="Kelsang_Tsering_Wireframe" src="https://user-images.githubusercontent.com/121586271/224147009-a1977a0d-b03c-452f-8899-414081e9f4cd.png">
+
 
 
 - The Game's title will be presented on the top of the screen.
