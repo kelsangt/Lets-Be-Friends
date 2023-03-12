@@ -25,9 +25,11 @@ class UserInputs {
         const singDescription = document.getElementById("singDescription");
         const sleepDescription = document.getElementById("sleepDescription");
 
+        this.show(whatsnext);
         // DECISIONS
 
         let moves = document.getElementById("moves");
+        this.show(moves);
         moves.addEventListener("click", e => {
             this.hide(moves);
             this.hide(treats);
@@ -42,6 +44,7 @@ class UserInputs {
         });
 
         let treats = document.getElementById("treats");
+        this.show(treats);
         treats.addEventListener("click", e => {
             console.log("jerky");
             this.hide(moves);
@@ -56,6 +59,7 @@ class UserInputs {
         });
 
         let toys = document.getElementById("toys");
+        this.show(toys);
         toys.addEventListener("click", e => {
             console.log("toys");
             this.hide(moves);
@@ -70,8 +74,10 @@ class UserInputs {
         });
 
         let leave = document.getElementById("leave");
+        this.show(leave);
         leave.addEventListener("click", e => {
             console.log("leave");
+            // this.mainGame.playerLeave = true;
             this.hide(whatsnext);
         });
 
@@ -244,6 +250,14 @@ class UserInputs {
 
     show(ele){
         ele.style.display = "block";
+    }
+
+    clear(){
+        this.hide(whatsnext);
+        this.hide(moves);
+        this.hide(treats);
+        this.hide(toys);
+        this.hide(leave);
     }
 }
 
