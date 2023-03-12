@@ -1,0 +1,450 @@
+// $color: purple; // Define a SCSS variable
+
+// #main>h1 {
+//     border: 4px solid $color; // Use the variable we defined
+//     padding: 20px;
+// }
+
+
+// .bottom_left_bar {
+//     z-index: 5;
+// }
+
+// .title_bar {
+//     position: relative;
+//     z-index: 1;
+// }
+
+// .background {
+//     position: absolute;
+//     background-color: transparent;
+//     z-index: 1;
+//     // border: 1px solid black;
+//     top: 200px; 
+//     left: 500px;
+// }
+
+// .truebackground {
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     background-color: rgb(247, 211, 232);
+// }
+
+// .title {
+//     position: absolute;
+//     background-color: white;
+//     z-index: 2;
+// }
+
+.canvas {
+    position: absolute;
+    background: url("../images/interaction_environment.png");
+    z-index: -1;
+}
+
+// #corgi {
+//     display: none;
+// }
+
+// #welcome {
+//     background-color: pink;
+//     position: absolute;
+//     z-index: 50;
+//     width: 200px;
+//     height: 200px;
+//     left: 150px;
+//     top: 80px;
+// }
+
+#maintext {
+    background-color: palegoldenrod;
+    z-index: 1;
+    position: absolute;
+    width: 498px;
+    height: 80px;
+    top: 280px;
+    border: 1px solid black;
+}
+
+#treats {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 250px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+}
+
+#moves {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 250px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;  
+}
+
+#toys {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 360px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+}
+
+#leave {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 360px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+}
+
+// Moves 
+
+#dance {
+    position: absolute;
+    width: 120px;
+    height: 30px;;
+    left: 20px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#playfulBark {
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    left: 20px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#sing {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 150px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#sleep {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 150px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#maintextpng {
+    position: absolute;
+    left: -3px;;
+    top: 275px;
+    z-index: -2;
+}
+
+// MOVES TEXT
+
+#whatsnext {
+    position: absolute;
+    z-index: 3;
+    width: 150px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+// MOVES TEXT
+
+#danceText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#playfulBarkText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#singText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#sleepText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+// TREATS
+
+#jerky {
+    position: absolute;
+    width: 120px;
+    height: 30px;;
+    left: 20px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#chewyBeef {
+    position: absolute;
+    width: 120px;
+    height: 30px;;
+    left: 20px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#milkBone {
+    position: absolute;
+    width: 120px;
+    height: 30px;;
+    left: 150px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#chickenSticks {
+    position: absolute;
+    width: 120px;
+    height: 30px;;
+    left: 150px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+// TREATS TEXT
+
+#jerkyText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#chewyBeefText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#milkBoneText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#chickenSticksText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+// TOYS 
+
+#frisbee {
+    position: absolute;
+    width: 120px;
+    height: 30px;;
+    left: 20px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#squeakyBall {
+    position: absolute;
+    height: 30px;
+    width: 120px;
+    left: 20px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#rubberBone {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 150px;
+    top: 325px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+#giraffePlush {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    left: 150px;
+    top: 290px;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+}
+
+// TOYS TEXT
+
+#frisbeeText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#squeakyBallText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#giraffePlushText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#rubberBoneText {
+    position: absolute;
+    z-index: 3;
+    width: 600px;
+    height: 50px;
+    top: 310px;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+// MOVES DESCRIPTION 
+
+#danceDescription {
+    position: absolute;
+    z-index: 3;
+    width: 180px;
+    height: 50px;
+    top: 295px;
+    left: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#playfulBarkDescription {
+    position: absolute;
+    z-index: 3;
+    width: 180px;
+    height: 50px;
+    top: 295px;
+    left: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#singDescription {
+    position: absolute;
+    z-index: 3;
+    width: 180px;
+    height: 50px;
+    top: 295px;
+    left: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#sleepDescription {
+    position: absolute;
+    z-index: 3;
+    width: 180px;
+    height: 50px;
+    top: 295px;
+    left: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
