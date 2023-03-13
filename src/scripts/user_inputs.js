@@ -8,7 +8,8 @@ class UserInputs {
 
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
-
+    }
+    pickDecision(){
         const whatsnext = document.getElementById("whatsnext");
 
         // MOVES TEXT
@@ -98,7 +99,14 @@ class UserInputs {
             console.log(this.opponentPet.hp);
             console.log("Current turn: " + this.mainGame.turn);
             this.mainGame.turn += 1;
+            this.mainGame.shouldContinue = true;
             console.log("Current turn: " + this.mainGame.turn);
+            // console.log("Current turn: " + this.mainGame.turn);
+            // console.log("Current turn: " + this.mainGame.turn);
+            // console.log(this.mainGame.shouldContinue);
+            
+            // console.log(this.mainGame.shouldContinue);
+
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });
         dance.addEventListener("mouseover", e => {
@@ -153,15 +161,15 @@ class UserInputs {
 
         let sleep = document.getElementById("sleep");
         sleep.addEventListener("click", e => {
-            console.log("zzzzz!!");
+            console.log("feeling tired!!");
             this.hide(dance);
             this.hide(playfulBark);
             this.hide(sing);
             this.hide(sleep);
             this.show(sleepText);
-            console.log(playerPet.hp);
+            console.log(this.playerPet.hp);
             this.playerPet.hp -= 40;
-            console.log(playerPet.hp);
+            console.log(this.playerPet.hp);
             this.hide(sleepDescription);
             console.log(this.mainGame.turn);
             this.mainGame.turn += 1;
@@ -251,6 +259,7 @@ class UserInputs {
             this.hide(rubberBone);
             this.show(rubberBoneText);
         });
+
     }
     hide(ele){
         ele.style.display = "none";
@@ -266,6 +275,9 @@ class UserInputs {
         this.hide(treats);
         this.hide(toys);
         this.hide(leave);
+    }
+    nextTurn(){
+        this.mainGame.turn += 1;
     }
 }
 
