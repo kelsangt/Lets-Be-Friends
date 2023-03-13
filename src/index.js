@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mainGame.display(canvasMain.ctx);
     
-    mainGame.play();
+    // mainGame.play();
 })
 

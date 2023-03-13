@@ -1,10 +1,13 @@
 import Canvas from "./canvas";
+import ComputerInputs from "./computer_inputs";
 
 class UserInputs {
     constructor(mainGame, playerPet, opponentPet){
         this.mainGame = mainGame;
         this.playerPet = playerPet;
         this.opponentPet = opponentPet;
+        this.pickDecision();
+        this.computerInputs = new ComputerInputs(mainGame, playerPet, opponentPet);
 
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
@@ -101,12 +104,14 @@ class UserInputs {
             this.mainGame.turn += 1;
             this.mainGame.shouldContinue = true;
             console.log("Current turn: " + this.mainGame.turn);
-            // console.log("Current turn: " + this.mainGame.turn);
-            // console.log("Current turn: " + this.mainGame.turn);
-            // console.log(this.mainGame.shouldContinue);
-            
-            // console.log(this.mainGame.shouldContinue);
-
+            console.log(this.mainGame.shouldContinue);
+            this.computerInputs.pickDecision();
+            this.hide(danceText);
+            this.show(moves);
+            this.show(treats);
+            this.show(leave);
+            this.show(toys);
+            this.show(whatsnext);
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });
         dance.addEventListener("mouseover", e => {
@@ -275,9 +280,6 @@ class UserInputs {
         this.hide(treats);
         this.hide(toys);
         this.hide(leave);
-    }
-    nextTurn(){
-        this.mainGame.turn += 1;
     }
 }
 
