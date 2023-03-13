@@ -96,6 +96,9 @@ class UserInputs {
             console.log(this.opponentPet.hp);
             this.opponentPet.hp += 50;  // This is the move logic working (need it to persist, however)
             console.log(this.opponentPet.hp);
+            console.log("Current turn: " + this.mainGame.turn);
+            this.mainGame.turn += 1;
+            console.log("Current turn: " + this.mainGame.turn);
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });
         dance.addEventListener("mouseover", e => {
@@ -160,6 +163,9 @@ class UserInputs {
             this.playerPet.hp -= 40;
             console.log(playerPet.hp);
             this.hide(sleepDescription);
+            console.log(this.mainGame.turn);
+            this.mainGame.turn += 1;
+            console.log(this.mainGame.turn);
         });
 
         sleep.addEventListener("mouseover", e => {
