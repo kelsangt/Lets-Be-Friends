@@ -24,6 +24,7 @@ class ComputerInputs {
         this.playerPet.hp += pickedMoveVal;
         // console.log(this.playerPet.hp);
         console.log("HEY IM A COMPUTER");
+        console.log("Player's HP: " + this.playerPet.hp);
         let element = document.getElementById("computer" + pickedMoveName + "Text");
         element.style.display = "block";
         element.addEventListener("click", e => {
