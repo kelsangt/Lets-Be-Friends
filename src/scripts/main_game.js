@@ -30,8 +30,9 @@ class MainGame {
             }
             if (this.turn % 2 === 0){
                 this.userMakeMove();
-                // this.userClearOptions();
                 this.turn += 1;
+                // this.userClearOptions();
+                // this.turn += 1;
             } else {
                 this.computerMakeMove();
                 this.turn += 1;

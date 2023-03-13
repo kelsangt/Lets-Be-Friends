@@ -135,7 +135,9 @@ class UserInputs {
             this.hide(sing);
             this.hide(sleep);
             this.show(singText);
+            console.log(this.opponentPet.hp);
             this.opponentPet.hp += 30;
+            console.log(this.opponentPet.hp);
             this.hide(singDescription);
         });
 
