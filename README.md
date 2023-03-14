@@ -8,7 +8,7 @@ As the main objective of the game is for the pets to be happy, players start out
 
 In Let's Be Friends, users will be able to:
 
-- Use their keyboard to select what decision they want to make
+- Use their mouse to click on decisions to select the decision they want to make
 - React to the moves and decisions made by the opponent, which will be controlled by the computer
 - Hover over options to see what each move, treat, and toy does, in detail
 - Leave the game while the game is being played
