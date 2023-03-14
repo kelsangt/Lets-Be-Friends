@@ -18,13 +18,14 @@ class MainGame {
         
     }
     display(context){
+    
         this.playerPet.draw(context);
         this.opponentPet.draw(context);
+        
         
     }
     play(){
         while (this.shouldContinue){ //((this.wins < 3) && (this.losses === 0) && (this.playerLeave === false)){
-            // console.log("hey im running here!");
             // console.log(this.turn);
             // this.shouldContinue = false;
 

@@ -6,6 +6,8 @@ class OpponentPet {
         this.x = 340;
         this.y = 60;
         this.hp = 0;
+       
+        // const opponent_pet = document.getElementById("opponent_pet");
         // this.image = document.getElementById("corgi");
     }
 
@@ -13,6 +15,7 @@ class OpponentPet {
         context.fillRect(this.x, this.y, this.width, this.height);
         // context.drawImage(this.image, 100, 250, this.width, this.height, this.x, this.y, this.width, this.height);
     }
+
 }
 
 export default OpponentPet;

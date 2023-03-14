@@ -4,8 +4,11 @@ class Canvas {
         this.ctx = ele.getContext("2d");
         this.width = ele.width = 500;
         this.height = ele.height = 280;
+
+        // const corgi = document.getElementById("corgi");
+        // this.ctx.drawImage(corgi);
         
-        // this.ctx.fillStyle = "rgb(234, 242, 233)";
+        // this.ctx.fillStyle = "rgb(234, 42, 233)";
         // this.ctx.fillRect(0, 0, this.width, this.height);
 
 

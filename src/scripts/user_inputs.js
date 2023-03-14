@@ -34,6 +34,7 @@ class UserInputs {
         const sleepDescription = document.getElementById("sleepDescription");
 
         this.show(whatsnext);
+        
         // DECISIONS
 
         let moves = document.getElementById("moves");
