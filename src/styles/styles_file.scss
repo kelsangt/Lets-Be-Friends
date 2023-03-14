@@ -524,24 +524,36 @@
 
 #victory {
     position: absolute;
-    z-index: 10;
     border: 1px solid black;
     width: 300px;
+    z-index: 10;
     height: 300px;
-    top: 200px;
-    left: 200px;
-    background-color: aqua;
+    top: 50px;
+    left: 100px;
+    background-color: pink;
     display: none;
 }
 
 #defeat {
     position: absolute;
-    z-index: 10;
     border: 1px solid black;
     width: 300px;
+    z-index: 10;
     height: 300px;
-    top: 200px;
-    left: 200px;
+    top: 50px;
+    left: 100px;
+    background-color: red;
+    display: none;
+}
+
+#roundComplete {
+    position: absolute;
+    border: 1px solid black;
+    width: 300px;
+    z-index: 10;
+    height: 300px;
+    top: 50px;
+    left: 100px;
     background-color: aqua;
     display: none;
 }

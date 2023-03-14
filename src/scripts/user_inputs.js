@@ -9,6 +9,9 @@ class UserInputs {
         this.pickDecision();
         this.computerInputs = new ComputerInputs(mainGame, playerPet, opponentPet);
         const backgroundmain = document.getElementById("backgroundmain");
+        const roundComplete = document.getElementById("roundComplete");
+        const victory = document.getElementById("victory");
+        const defeat = document.getElementById("defeat");
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
     }
@@ -130,7 +133,7 @@ class UserInputs {
             this.hide(sleep);
             this.show(playfulBarkText);
             this.hide(playfulBarkDescription);
-            this.opponentPet.hp += 70;  
+            this.opponentPet.hp += 700;  
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -270,7 +273,11 @@ class UserInputs {
             this.hide(rubberBone);
             this.show(rubberBoneText);
         });
-
+        roundComplete.addEventListener("click", e => {
+            this.hide(roundComplete);
+            this.resetRound();
+            this.renderAll();
+        })
     }
     hide(ele){
         ele.style.display = "none";
@@ -288,30 +295,38 @@ class UserInputs {
         this.hide(leave);
     }
 
+    renderAll(){
+        this.show(backgroundmain);
+        this.show(maintextpng);
+        this.show(whatsnext);
+        this.show(moves);
+        this.show(treats);
+        this.show(toys);
+        this.show(leave);
+    }
     checkEverything(){
         if(this.playerPet.hp >= 300){
-            // this.renderDefeat();
+            this.renderDefeat();
             this.mainGame.losses += 1;
         }
         if(this.opponentPet.hp >= 300){
-            this.renderFade();
-            // this.resetRound();
+            if (this.mainGame.wins < 2){
+                this.renderFade();
+            }
             this.mainGame.wins += 1;
         }
-        // if(this.mainGame.wins > 3){
-        //     this.clear();
-        //     // this.renderVictory();
-        // }
-        // if(this.mainGame.losses > 0){
-        //     this.clear();
-        //     // this.renderDefeat();
-        // }
+        if(this.mainGame.wins >= 3){
+            this.renderVictory();
+            console.log("VICTORY AT LAST");
+        }
     }
 
     renderFade(){
         this.hide(backgroundmain);
         this.hide(maintextpng);
+        this.show(roundComplete);
     }
+
     
     resetRound(){
         this.playerPet.hp = 0;
@@ -330,13 +345,15 @@ class UserInputs {
     }
 
     renderVictory(){
-        const victory = document.getElementById("victory");
-        this.victory.element.style = "block";
+        this.hide(backgroundmain);
+        this.hide(maintextpng);
+        this.show(victory);
     }
 
     renderDefeat(){
-        const defeat = document.getElementById("defeat");
-        this.defeat.element.style = "block";
+        this.hide(backgroundmain);
+        this.hide(maintextpng);
+        this.show(defeat);
     }
 
 }

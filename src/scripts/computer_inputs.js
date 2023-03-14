@@ -23,7 +23,7 @@ class ComputerInputs {
         
         this.playerPet.hp += pickedMoveVal;
         console.log("Player HP: " + this.playerPet.hp);
-        if (this.opponentPet.hp < 300){
+        if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){
 
         
             let element = document.getElementById("computer" + pickedMoveName + "Text");
