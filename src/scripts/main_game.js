@@ -19,8 +19,8 @@ class MainGame {
     }
     display(context){
     
-        this.playerPet.draw(context);
-        this.opponentPet.draw(context);
+        // this.playerPet.draw(context);
+        // this.opponentPet.draw(context);
         
         
     }

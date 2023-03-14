@@ -12,7 +12,7 @@ class PlayerPet {
     }
 
     draw(context){
-        context.fillRect(this.x, this.y, this.width, this.height);
+        // context.fillRect(this.x, this.y, this.width, this.height);
     //  context.drawImage(this.image, 50, 250, this.width, this.height, this.x, this.y, this.width, this.height)
     }
 

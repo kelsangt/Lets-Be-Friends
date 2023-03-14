@@ -33,8 +33,36 @@ class UserInputs {
         const singDescription = document.getElementById("singDescription");
         const sleepDescription = document.getElementById("sleepDescription");
 
+        // TREATS TEXT 
+
+        const jerkyText = document.getElementById("jerkyText");
+        const chewyBeefText = document.getElementById("chewyBeefText");
+        const milkBoneText = document.getElementById("milkBoneText");
+        const chickenSticksText = document.getElementById("chickenSticksText");
+
+        // TREATS DESCRIPTION
+
+        const jerkyDescription = document.getElementById("jerkyDescription");
+        const chewyBeefDescription = document.getElementById("chewyBeefDescription");
+        const milkBoneDescription = document.getElementById("milkBoneDescription");
+        const chickenSticksDescription = document.getElementById("chickenSticksDescription");
+
+        // TOYS TEXT
+
+        const frisbeeText = document.getElementById("frisbeeText");
+        const squeakyBallText = document.getElementById("squeakyBallText");
+        const giraffePlushText = document.getElementById("giraffePlushText");
+        const rubberBoneText = document.getElementById("rubberBoneText");
+
+        // TOYS DESCRIPTION
+
+        const frisbeeDescription = document.getElementById("frisbeeDescription");
+        const squeakyBallDescription = document.getElementById("squeakyBallDescription");
+        const giraffePlushDescription = document.getElementById("giraffePlushDescription");
+        const rubberBoneDescription = document.getElementById("rubberBoneDescription");
+
         this.show(whatsnext);
-        
+
         // DECISIONS
 
         let moves = document.getElementById("moves");
@@ -209,6 +237,21 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(jerkyText);
+            this.hide(jerkyDescription);
+            this.opponentPet.hp += 30;
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        jerkyText.addEventListener("click", e => {
+            this.hide(jerkyText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        jerky.addEventListener("mouseover", e => {
+            this.hide(chickenSticksDescription);
+            this.hide(milkBoneDescription);
+            this.hide(chewyBeefDescription);
+            this.show(jerkyDescription);
         });
 
         let chewyBeef = document.getElementById("chewyBeef");
@@ -218,6 +261,21 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(chewyBeefText);
+            this.hide(chewyBeefDescription);
+            this.opponentPet.hp += 40;
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        chewyBeefText.addEventListener("click", e => {
+            this.hide(chewyBeefText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        chewyBeef.addEventListener("mouseover", e => {
+            this.hide(chickenSticksDescription);
+            this.hide(milkBoneDescription);
+            this.hide(jerkyDescription);
+            this.show(chewyBeefDescription);
         });
 
         let milkBone = document.getElementById("milkBone");
@@ -227,6 +285,21 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(milkBoneText);
+            this.hide(milkBoneDescription);
+            this.opponentPet.hp += 50;
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        milkBoneText.addEventListener("click", e => {
+            this.hide(milkBoneText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        milkBone.addEventListener("mouseover", e => {
+            this.hide(chickenSticksDescription);
+            this.hide(chewyBeefDescription);
+            this.hide(jerkyDescription);
+            this.show(milkBoneDescription);
         });
 
         let chickenSticks = document.getElementById("chickenSticks");
@@ -236,7 +309,23 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(chickenSticksText);
+            this.hide(chickenSticksDescription);
+            this.opponentPet.hp += 20;
+            console.log("Opponent HP: " + this.opponentPet.hp);
         });
+
+        chickenSticksText.addEventListener("click", e => {
+            this.hide(chickenSticksText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        chickenSticks.addEventListener("mouseover", e => {
+            this.hide(milkBoneDescription);
+            this.hide(chewyBeefDescription);
+            this.hide(jerkyDescription);
+            this.show(chickenSticksDescription);
+        });
+
 
         // TOYS
 
@@ -248,6 +337,21 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(frisbeeText);
+            this.hide(frisbeeDescription);
+            this.opponentPet.hp += 50;  
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        frisbeeText.addEventListener("click", e => {
+            this.hide(frisbeeText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        frisbee.addEventListener("mouseover", e => {
+            this.hide(squeakyBallDescription);
+            this.hide(giraffePlushDescription);
+            this.hide(rubberBoneDescription);
+            this.show(frisbeeDescription);
         });
 
         let squeakyBall = document.getElementById("squeakyBall");
@@ -257,6 +361,21 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(squeakyBallText);
+            this.hide(squeakyBallDescription);
+            this.opponentPet.hp += 30;  
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        squeakyBallText.addEventListener("click", e => {
+            this.hide(squeakyBallText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        squeakyBall.addEventListener("mouseover", e => {
+            this.hide(frisbeeDescription);
+            this.hide(giraffePlushDescription);
+            this.hide(rubberBoneDescription);
+            this.show(squeakyBallDescription);
         });
 
         let giraffePlush = document.getElementById("giraffePlush");
@@ -266,6 +385,21 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(giraffePlushText);
+            this.hide(giraffePlushDescription);
+            this.opponentPet.hp += 20;  
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        giraffePlushText.addEventListener("click", e => {
+            this.hide(giraffePlushText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        giraffePlush.addEventListener("mouseover", e => {
+            this.hide(frisbeeDescription);
+            this.hide(squeakyBallDescription);
+            this.hide(rubberBoneDescription);
+            this.show(giraffePlushDescription);
         });
 
         let rubberBone = document.getElementById("rubberBone");
@@ -275,7 +409,23 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(rubberBoneText);
+            this.hide(rubberBoneDescription);
+            this.opponentPet.hp += 40;  
+            console.log("Opponent HP: " + this.opponentPet.hp);
         });
+
+        rubberBoneText.addEventListener("click", e => {
+            this.hide(rubberBoneText);
+            this.computerInputs.pickDecision(this);
+        });
+
+        rubberBone.addEventListener("mouseover", e => {
+            this.hide(frisbeeDescription);
+            this.hide(squeakyBallDescription);
+            this.hide(giraffePlushDescription);
+            this.show(rubberBoneDescription);
+        });
+
         roundComplete.addEventListener("click", e => {
             this.hide(roundComplete);
             this.resetRound();
