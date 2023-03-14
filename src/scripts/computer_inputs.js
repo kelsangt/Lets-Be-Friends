@@ -11,24 +11,32 @@ class ComputerInputs {
         // const allArray = [movesArray, treatsArray, toysArray];
 
         // this.shouldContinue = true;
-        const movesArray = [
+        const choicesArray = [
             ["Dance", 50],
             ["Sing", 30],
             ["Sleep", 40],
-            ["PlayfulBark", 50]
+            ["PlayfulBark", 50],
+            ["Jerky", 30],
+            ["ChewyBeef", 40],
+            ["MilkBone", 50],
+            ["ChickenSticks", 20],
+            ["Frisbee", 50],
+            ["SqueakyBall", 30],
+            ["GiraffePlush", 20],
+            ["RubberBone", 40]
         ];
-        let randomIndex = (Math.floor(Math.random() * movesArray.length));
-        let pickedMoveName = movesArray[randomIndex][0];
-        let pickedMoveVal = movesArray[randomIndex][1];
+        let randomIndex = (Math.floor(Math.random() * choicesArray.length));
+        let pickedChoiceName = choicesArray[randomIndex][0];
+        let pickedChoiceVal = choicesArray[randomIndex][1];
         
         if(this.opponentPet.hp <300){
-            this.playerPet.hp += pickedMoveVal;
+            this.playerPet.hp += pickedChoiceVal;
             console.log("Player HP: " + this.playerPet.hp);
         }
         if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){
 
         
-            let element = document.getElementById("computer" + pickedMoveName + "Text");
+            let element = document.getElementById("computer" + pickedChoiceName + "Text");
             element.style.display = "block";
             element.addEventListener("click", e => {
                 element.style.display = "none";
