@@ -22,9 +22,7 @@ class ComputerInputs {
         let pickedMoveVal = movesArray[randomIndex][1];
 
         this.playerPet.hp += pickedMoveVal;
-        // console.log(this.playerPet.hp);
-        console.log("HEY IM A COMPUTER");
-        console.log("Player's HP: " + this.playerPet.hp);
+        console.log("Player HP: " + this.playerPet.hp);
         let element = document.getElementById("computer" + pickedMoveName + "Text");
         element.style.display = "block";
         element.addEventListener("click", e => {
@@ -34,10 +32,13 @@ class ComputerInputs {
             userInput.show(toys);
             userInput.show(leave);
             userInput.show(whatsnext);
-        })
+        });
+        userInput.checkEverything();     // Tracking all game conditions 
+        console.log("LOSSES: " + this.mainGame.losses);
+        console.log("WINS: " + this.mainGame.wins);
         // this.mainGame.userInputs.clear();
-        this.mainGame.turn += 1;
-        this.mainGame.shouldContinue = true;
+        // this.mainGame.turn += 1;
+        // this.mainGame.shouldContinue = true;
     }
 
 }

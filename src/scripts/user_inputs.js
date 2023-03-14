@@ -89,7 +89,6 @@ class UserInputs {
 
         let dance = document.getElementById("dance");
         dance.addEventListener("click", e => {
-            console.log("DANCING IN USER INPUT CLASS");
             // Dance logic (how it affects opponent HP)
             this.hide(dance);
             this.hide(playfulBark);
@@ -97,20 +96,15 @@ class UserInputs {
             this.hide(sleep);
             this.show(danceText);
             this.hide(danceDescription);
-            console.log(this.opponentPet.hp);
-            this.opponentPet.hp += 50;  // This is the move logic working (need it to persist, however)
-            console.log(this.opponentPet.hp);
-            console.log("Current turn: " + this.mainGame.turn);
-            this.mainGame.turn += 1;
-            this.mainGame.shouldContinue = true;
-            console.log("Current turn: " + this.mainGame.turn);
-            console.log(this.mainGame.shouldContinue);
+            this.opponentPet.hp += 50;  
+            console.log("Opponent HP: " + this.opponentPet.hp);
+            // console.log("Current turn: " + this.mainGame.turn);
+            // this.mainGame.turn += 1;
+            // this.mainGame.shouldContinue = true;
+            // console.log("Current turn: " + this.mainGame.turn);
+            // console.log(this.mainGame.shouldContinue);
             
-            // this.show(moves);
-            // this.show(treats);
-            // this.show(leave);
-            // this.show(toys);
-            // this.show(whatsnext);
+            
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });
 
@@ -130,16 +124,19 @@ class UserInputs {
 
         let playfulBark = document.getElementById("playfulBark");
         playfulBark.addEventListener("click", e => {
-            console.log("bark!!");
             this.hide(dance);
             this.hide(playfulBark);
             this.hide(sing);
             this.hide(sleep);
             this.show(playfulBarkText);
-            console.log(this.opponentPet.hp);
-            this.opponentPet.hp += 70;  
-            console.log(this.opponentPet.hp);
             this.hide(playfulBarkDescription);
+            this.opponentPet.hp += 70;  
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        playfulBarkText.addEventListener("click", e => {
+            this.hide(playfulBarkText);
+            this.computerInputs.pickDecision(this);
         });
 
         playfulBark.addEventListener("mouseover", e => {
@@ -151,16 +148,19 @@ class UserInputs {
 
         let sing = document.getElementById("sing");
         sing.addEventListener("click", e => {
-            console.log("singing!!");
             this.hide(dance);
             this.hide(playfulBark);
             this.hide(sing);
             this.hide(sleep);
             this.show(singText);
-            console.log(this.opponentPet.hp);
-            this.opponentPet.hp += 30;
-            console.log(this.opponentPet.hp);
             this.hide(singDescription);
+            this.opponentPet.hp += 30;
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        singText.addEventListener("click", e => {
+            this.hide(singText);
+            this.computerInputs.pickDecision(this);
         });
 
         sing.addEventListener("mouseover", e => {
@@ -172,19 +172,19 @@ class UserInputs {
 
         let sleep = document.getElementById("sleep");
         sleep.addEventListener("click", e => {
-            console.log("feeling tired!!");
             this.hide(dance);
             this.hide(playfulBark);
             this.hide(sing);
             this.hide(sleep);
             this.show(sleepText);
-            console.log(this.playerPet.hp);
-            this.playerPet.hp -= 40;
-            console.log(this.playerPet.hp);
             this.hide(sleepDescription);
-            console.log(this.mainGame.turn);
-            this.mainGame.turn += 1;
-            console.log(this.mainGame.turn);
+            this.opponentPet.hp += 40;
+            console.log("Opponent HP: " + this.opponentPet.hp);
+        });
+
+        sleepText.addEventListener("click", e => {
+            this.hide(sleepText);
+            this.computerInputs.pickDecision(this);
         });
 
         sleep.addEventListener("mouseover", e => {
@@ -287,6 +287,52 @@ class UserInputs {
         this.hide(toys);
         this.hide(leave);
     }
+
+    checkEverything(){
+        if(this.playerPet.hp >= 300){
+            this.mainGame.losses += 1;
+        }
+        if(this.opponentPet.hp >= 300){
+            this.mainGame.wins += 1;
+            // this.resetRound();
+        }
+        // if(this.mainGame.wins > 3){
+        //     this.clear();
+        //     // this.renderVictory();
+        // }
+        // if(this.mainGame.losses > 0){
+        //     this.clear();
+        //     // this.renderDefeat();
+        // }
+    }
+
+    resetRound(){
+        this.playerPet.hp = 0;
+        this.opponentPet.hp = 0;
+        // this.render();
+    }
+
+    render(){
+        textbox = document.getElementById("maintextpng");
+        background1 = document.querySelector(".canvas");
+        background1.element.style = "block";
+        this.show(whatsnext);
+        this.show(moves);
+        this.show(treats);
+        this.show(toys);
+        this.show(leave);
+    }
+
+    renderVictory(){
+        victory = document.getElementById("victory");
+        victory.element.style = "block";
+    }
+
+    renderDefeat(){
+        victory = document.getElementById("victory");
+        victory.element.style = "block";
+    }
+
 }
 
 export default UserInputs;
