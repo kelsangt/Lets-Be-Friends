@@ -12,6 +12,7 @@ class UserInputs {
         const roundComplete = document.getElementById("roundComplete");
         const victory = document.getElementById("victory");
         const defeat = document.getElementById("defeat");
+        const playerLeaveScreen = document.getElementById("playerLeaveScreen");
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
     }
@@ -84,8 +85,9 @@ class UserInputs {
         this.show(leave);
         leave.addEventListener("click", e => {
             console.log("leave");
+            this.renderLeave();
             // this.mainGame.playerLeave = true;
-            this.hide(whatsnext);
+            // this.hide(whatsnext);
         });
 
         // MOVES
@@ -353,6 +355,13 @@ class UserInputs {
         this.hide(backgroundmain);
         this.hide(maintextpng);
         this.show(defeat);
+    }
+
+    renderLeave(){
+        this.hide(backgroundmain);
+        this.hide(maintextpng);
+        this.clear();
+        this.show(playerLeaveScreen);
     }
 
 }

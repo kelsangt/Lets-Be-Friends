@@ -557,3 +557,15 @@
     background-color: aqua;
     display: none;
 }
+
+#playerLeaveScreen {
+    position: absolute;
+    border: 1px solid black;
+    width: 300px;
+    z-index: 10;
+    height: 300px;
+    top: 50px;
+    left: 100px;
+    background-color: yellowgreen;
+    display: none;
+}
