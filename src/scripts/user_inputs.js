@@ -8,7 +8,7 @@ class UserInputs {
         this.opponentPet = opponentPet;
         this.pickDecision();
         this.computerInputs = new ComputerInputs(mainGame, playerPet, opponentPet);
-
+        const backgroundmain = document.getElementById("backgroundmain");
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
     }
@@ -290,11 +290,13 @@ class UserInputs {
 
     checkEverything(){
         if(this.playerPet.hp >= 300){
+            // this.renderDefeat();
             this.mainGame.losses += 1;
         }
         if(this.opponentPet.hp >= 300){
-            this.mainGame.wins += 1;
+            this.renderFade();
             // this.resetRound();
+            this.mainGame.wins += 1;
         }
         // if(this.mainGame.wins > 3){
         //     this.clear();
@@ -306,31 +308,35 @@ class UserInputs {
         // }
     }
 
+    renderFade(){
+        this.hide(backgroundmain);
+        this.hide(maintextpng);
+    }
+    
     resetRound(){
         this.playerPet.hp = 0;
         this.opponentPet.hp = 0;
-        // this.render();
     }
 
-    render(){
-        textbox = document.getElementById("maintextpng");
-        background1 = document.querySelector(".canvas");
-        background1.element.style = "block";
-        this.show(whatsnext);
-        this.show(moves);
-        this.show(treats);
-        this.show(toys);
-        this.show(leave);
+    renderRoundWin(){
+        // const textbox = document.getElementById("maintextpng");
+        // const background1 = document.querySelector(".canvas");
+        // this.background1.style.display = "block";
+        this.hide(whatsnext);
+        this.hide(moves);
+        this.hide(treats);
+        this.hide(toys);
+        this.hide(leave);
     }
 
     renderVictory(){
-        victory = document.getElementById("victory");
-        victory.element.style = "block";
+        const victory = document.getElementById("victory");
+        this.victory.element.style = "block";
     }
 
     renderDefeat(){
-        victory = document.getElementById("victory");
-        victory.element.style = "block";
+        const defeat = document.getElementById("defeat");
+        this.defeat.element.style = "block";
     }
 
 }

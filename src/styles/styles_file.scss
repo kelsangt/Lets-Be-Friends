@@ -37,9 +37,16 @@
 //     z-index: 2;
 // }
 
-.canvas {
+// .canvas {
+//     position: absolute;
+//     background: url("../images/interaction_environment.png");
+//     z-index: -1;
+// }
+
+#backgroundmain {
     position: absolute;
-    background: url("../images/interaction_environment.png");
+    left: 0px;
+    top: 0px;
     z-index: -1;
 }
 
@@ -162,6 +169,7 @@
     left: -3px;;
     top: 275px;
     z-index: -2;
+    display: block;
 }
 
 // MOVES TEXT

@@ -1,9 +1,10 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-.canvas {
+#backgroundmain {
   position: absolute;
-  background: url("../images/interaction_environment.png");
+  left: 0px;
+  top: 0px;
   z-index: -1;
 }
 
@@ -110,6 +111,7 @@
   left: -3px;
   top: 275px;
   z-index: -2;
+  display: block;
 }
 
 #whatsnext {
