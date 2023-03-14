@@ -317,7 +317,6 @@ class UserInputs {
         }
         if(this.mainGame.wins >= 3){
             this.renderVictory();
-            console.log("VICTORY AT LAST");
         }
     }
 

@@ -15,7 +15,6 @@ class MainGame {
         this.wins = 0;
         this.losses = 0;
         this.turn = 0;                // Game starts out with turn being 0 so the user can make the first choice
-        this.playerLeave = false;
         
     }
     display(context){

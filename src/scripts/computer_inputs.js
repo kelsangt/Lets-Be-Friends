@@ -21,8 +21,10 @@ class ComputerInputs {
         let pickedMoveName = movesArray[randomIndex][0];
         let pickedMoveVal = movesArray[randomIndex][1];
         
-        this.playerPet.hp += pickedMoveVal;
-        console.log("Player HP: " + this.playerPet.hp);
+        if(this.opponentPet.hp <300){
+            this.playerPet.hp += pickedMoveVal;
+            console.log("Player HP: " + this.playerPet.hp);
+        }
         if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){
 
         
@@ -30,7 +32,7 @@ class ComputerInputs {
             element.style.display = "block";
             element.addEventListener("click", e => {
                 element.style.display = "none";
-                if((this.playerPet.hp < 300) && (this.opponentPet.hp < 300) && (this.mainGame.playerLeave === false)){
+                if((this.playerPet.hp < 300) ){
                     userInput.show(moves);
                     userInput.show(treats);
                     userInput.show(toys);
