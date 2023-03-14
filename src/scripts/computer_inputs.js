@@ -7,7 +7,7 @@ class ComputerInputs {
         // Moves
 
     }
-    pickDecision(){
+    pickDecision(userInput){
         // const allArray = [movesArray, treatsArray, toysArray];
         this.shouldContinue = true;
         const movesArray = [
@@ -29,6 +29,11 @@ class ComputerInputs {
         element.style.display = "block";
         element.addEventListener("click", e => {
             element.style.display = "none";
+            userInput.show(moves);
+            userInput.show(treats);
+            userInput.show(toys);
+            userInput.show(leave);
+            userInput.show(whatsnext);
         })
         // this.mainGame.userInputs.clear();
         this.mainGame.turn += 1;

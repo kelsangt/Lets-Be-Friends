@@ -105,15 +105,21 @@ class UserInputs {
             this.mainGame.shouldContinue = true;
             console.log("Current turn: " + this.mainGame.turn);
             console.log(this.mainGame.shouldContinue);
-            this.computerInputs.pickDecision();
-            this.hide(danceText);
-            this.show(moves);
-            this.show(treats);
-            this.show(leave);
-            this.show(toys);
-            this.show(whatsnext);
+            
+            // this.show(moves);
+            // this.show(treats);
+            // this.show(leave);
+            // this.show(toys);
+            // this.show(whatsnext);
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });
+
+        danceText.addEventListener("click", e => {
+            this.hide(danceText);
+            this.computerInputs.pickDecision(this);
+        });
+
+
         dance.addEventListener("mouseover", e => {
             this.hide(playfulBarkDescription);
             this.hide(singDescription);
