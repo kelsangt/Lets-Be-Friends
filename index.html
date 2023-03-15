@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
@@ -13,135 +14,145 @@
   </head>
 
   <body>
-    <div class="main">
-      <div class="topOfPage">
-        <h1 id="mainTitle">Let's Be Friends</h1>
-        <h2 id="myName">by Kelsang Tsering</h2>
-        <div class="navLinks">
-          <a href="https://github.com/kelsangt"><i class="fa fa-github" id="githublink"></i></a>
-          <a href="https://www.linkedin.com/in/kelsang-tsering/"><i class="fa fa-linkedin" id="linkedinlink"></i></a>
-        </div>
+    <div class="everything">
+      <div class="instructions">
+        <h2 id="instructionsh2">Instructions</h2>
+        <p id="instructionsText">To play, please use your mouse to click and select each decision you want your pet to make<p>
       </div>
-      <!-- <div class="truebackground"></div> -->
-      <canvas class="canvas"></canvas>
-      
-      <!-- <img id="opponentpetimage" src="../images/opponentpetimage.gif" alt="opponentpetimage"> -->
-      <!-- <img id="playerpetimage" src="../images/playerpetimage.webp" alt="playerpetimage"> -->
-      <!-- <div id="maintext"></div> -->
-      <div class="gamescreen">
-        <!-- <img src="images/interaction_environment.png" id="backgroundmain"> -->
-        <img src="images/corgi2.png" alt="corgi2" id="corgi2">
-        <img src="images/player_pet_2.png" alt="playerpet2" id="playerpet2">
-      </div>
-      
-      <div class="textbox">
-        <!-- DECISIONS  -->
-        <div class="decisions">
-          <button id="moves">Moves</button>
-          <button id="treats">Treats</button>
-          <button id="toys">Toys</button>
-          <button id="leave">Leave</button>
+      <div class="main">
+        <div class="topOfPage">
+          <h1 id="mainTitle">Let's Be Friends</h1>
+          <h2 id="myName">by Kelsang Tsering</h2>
+          <div class="navLinks">
+            <a href="https://github.com/kelsangt"><i class="fa fa-github" id="githublink"></i></a>
+            <a href="https://www.linkedin.com/in/kelsang-tsering/"><i class="fa fa-linkedin" id="linkedinlink"></i></a>
+          </div>
         </div>
-
-        <!-- MOVES  -->
-        <div class="specificmoves">
-          <button id="dance">Dance</button>
-          <button id="playfulBark">Playful Bark</button>
-          <button id="sing">Sing</button>
-          <button id="sleep">Sleep</button>
-        </div>
-
-        <!-- TREATS -->
-        <div class="specifictreats">
-          <button id="jerky">Jerky</button>
-          <button id="chewyBeef">Chewy Beef</button>
-          <button id="milkBone">Milk Bone</button>
-          <button id="chickenSticks">Chicken Sticks</button>
-        </div>
-
-
-        <!-- TOYS  -->
-        <div class="specifictoys">
-          <button id="frisbee">Frisbee</button>
-          <button id="squeakyBall">Squeaky Ball</button>
-          <button id="giraffePlush">Giraffe Plush</button>
-          <button id="rubberBone">Rubber Bone</button>
+        <!-- <div class="truebackground"></div> -->
+        <canvas class="canvas"></canvas>
+        
+        <!-- <img id="opponentpetimage" src="../images/opponentpetimage.gif" alt="opponentpetimage"> -->
+        <!-- <img id="playerpetimage" src="../images/playerpetimage.webp" alt="playerpetimage"> -->
+        <!-- <div id="maintext"></div> -->
+        <div class="gamescreen">
+          <!-- <img src="images/interaction_environment.png" id="backgroundmain"> -->
+          <img src="images/corgi2.png" alt="corgi2" id="corgi2">
+          <img src="images/player_pet_2.png" alt="playerpet2" id="playerpet2">
         </div>
         
+        <div class="textbox">
+          <!-- DECISIONS  -->
+          <div class="decisions">
+            <button id="moves">Moves</button>
+            <button id="treats">Treats</button>
+            <button id="toys">Toys</button>
+            <button id="leave">Leave</button>
+          </div>
 
-        <!-- <img id="maintextpng" src="images/maintext.png" alt="maintextpng"> -->
-        <!-- <div id="welcome"></div> -->
-        <div id="whatsnext">What will Fido do?</div>
+          <!-- MOVES  -->
+          <div class="specificmoves">
+            <button id="dance">Dance</button>
+            <button id="playfulBark">Playful Bark</button>
+            <button id="sing">Sing</button>
+            <button id="sleep">Sleep</button>
+          </div>
 
-        <!-- MOVES TEXT -->
-        <div id="danceText">Fido used Dance! Woah, did you see those moves?</div>
-        <div id="playfulBarkText">Fido used Playful Bark! He is really excited!</div>
-        <div id="singText">Fido used Sing! Listen to that beautiful melody!</div>
-        <div id="sleepText">Fido used Sleep! He is enjoying a well deserved rest!</div>
+          <!-- TREATS -->
+          <div class="specifictreats">
+            <button id="jerky">Jerky</button>
+            <button id="chewyBeef">Chewy Beef</button>
+            <button id="milkBone">Milk Bone</button>
+            <button id="chickenSticks">Chicken Sticks</button>
+          </div>
 
-        <!-- TREATS TEXT-->
-        <div id="jerkyText">Fido gave Spot a delicious piece of jerky! Yummy!</div>
-        <div id="chewyBeefText">Fido gave Spot some Chewy Beef! Delicious!</div>
-        <div id="milkBoneText">Fido gave Spot a Milk Bone! Tasty!</div>
-        <div id="chickenSticksText">Fido gave Spot some Chicken Sticks! Very good!</div>
 
-        <!-- TOYS TEXT -->
-        <div id="frisbeeText">Fido gave Spot a Frisbee! Woah!</div>
-        <div id="squeakyBallText">Fido gave Spot a Squeaky Ball! It's very noisy!</div>
-        <div id="giraffePlushText">Fido gave Spot a Giraffe Plush!</div>
-        <div id="rubberBoneText">Fido gave Spot a Rubber Bone! Exciting!</div>
+          <!-- TOYS  -->
+          <div class="specifictoys">
+            <button id="frisbee">Frisbee</button>
+            <button id="squeakyBall">Squeaky Ball</button>
+            <button id="giraffePlush">Giraffe Plush</button>
+            <button id="rubberBone">Rubber Bone</button>
+          </div>
+          
 
-        <!-- COMPUTER MOVES TEXT  -->
+          <!-- <img id="maintextpng" src="images/maintext.png" alt="maintextpng"> -->
+          <!-- <div id="welcome"></div> -->
+          <div id="whatsnext">What will Fido do?</div>
+
+          <!-- MOVES TEXT -->
+          <div id="danceText">Fido used Dance! Woah, did you see those moves?</div>
+          <div id="playfulBarkText">Fido used Playful Bark! He is really excited!</div>
+          <div id="singText">Fido used Sing! Listen to that beautiful melody!</div>
+          <div id="sleepText">Fido used Sleep! He is enjoying a well deserved rest!</div>
+
+          <!-- TREATS TEXT-->
+          <div id="jerkyText">Fido gave Spot a delicious piece of jerky! Yummy!</div>
+          <div id="chewyBeefText">Fido gave Spot some Chewy Beef! Delicious!</div>
+          <div id="milkBoneText">Fido gave Spot a Milk Bone! Tasty!</div>
+          <div id="chickenSticksText">Fido gave Spot some Chicken Sticks! Very good!</div>
+
+          <!-- TOYS TEXT -->
+          <div id="frisbeeText">Fido gave Spot a Frisbee! Woah!</div>
+          <div id="squeakyBallText">Fido gave Spot a Squeaky Ball! It's very noisy!</div>
+          <div id="giraffePlushText">Fido gave Spot a Giraffe Plush!</div>
+          <div id="rubberBoneText">Fido gave Spot a Rubber Bone! Exciting!</div>
+
+          <!-- COMPUTER MOVES TEXT  -->
+          
+          <div id="computerDanceText">Spot used Dance! Woah, did you see those moves?</div>
+          <div id="computerPlayfulBarkText">Spot used Playful Bark! He is really excited!</div>
+          <div id="computerSingText">Spot used Sing! Listen to that beautiful melody!</div>
+          <div id="computerSleepText">Spot used Sleep! He is enjoying a well deserved rest!</div>
+
+          <!-- COMPUTER TREATS TEXT  -->
+
+          <div id="computerJerkyText">Spot gave Fido a delicious piece of jerky! Yummy!</div>
+          <div id="computerChewyBeefText">Spot gave Fido some Chewy Beef! Delicious!</div>
+          <div id="computerMilkBoneText">Spot gave Fido a Milk Bone! Tasty!</div>
+          <div id="computerChickenSticksText">Spot gave Fido some Chicken Sticks! Very good!</div>
+
+          <!-- COMPUTER TOYS TEXT  -->
+
+          <div id="computerFrisbeeText">Spot gave Fido a Frisbee! Woah!</div>
+          <div id="computerSqueakyBallText">Spot gave Fido a Squeaky Ball! It's very noisy!</div>
+          <div id="computerGiraffePlushText">Spot gave Fido a Giraffe Plush!</div>
+          <div id="computerRubberBoneText">Spot gave Fido a Rubber Bone! Exciting!</div>
+
+          <!-- MOVES DESCRIPTION -->
+          <div id="danceDescription">Dance increases the opponent pet's Happiness by 50 points</div>
+          <div id="playfulBarkDescription">Playful Bark increases the opponent pet's Happiness by 70 points</div>
+          <div id="singDescription">Sing increases the opponent pet's Happiness by 30 points</div>
+          <div id="sleepDescription">Sleep increases the opponent pet's Happiness by 40 points</div>
+
+          <!-- TREATS DESCRIPTION  -->
+
+          <div id="jerkyDescription">Jerky increases the opponent pet's Happiness by 30 points</div>
+          <div id="chewyBeefDescription">Chewy Beef increases the opponent pet's Happiness by 40 points</div>
+          <div id="milkBoneDescription">Milk Bone increases the opponent pet's Happiness by 50 points</div>
+          <div id="chickenSticksDescription">Chicken Sticks increase the opponent pet's Happiness by 20 points</div>
+
+          <!-- TOYS DESCRIPTION  -->
+
+          <div id="frisbeeDescription">Frisbee increases the opponent pet's Happiness by 50 points</div>
+          <div id="squeakyBallDescription">Squeaky Ball increases the opponent pet's Happiness by 30 points</div>
+          <div id="giraffePlushDescription">Giraffe Plush increases the opponent pet's Happiness by 20 points</div>
+          <div id="rubberBoneDescription">Rubber Bone increases the opponent pet's Happiness by 40 points</div>
+        </div>
+
+        <!-- RENDERED WINDOWS -->
+        <div id="instructions"></div>
+        <div id="victory">VICTORY!!!!</div>
+        <div id="defeat">DEFEAT</div>
+        <div id="playerLeaveScreen">Thanks for playing!</div>
+        <div id="roundComplete">Round Complete!</div>
         
-        <div id="computerDanceText">Spot used Dance! Woah, did you see those moves?</div>
-        <div id="computerPlayfulBarkText">Spot used Playful Bark! He is really excited!</div>
-        <div id="computerSingText">Spot used Sing! Listen to that beautiful melody!</div>
-        <div id="computerSleepText">Spot used Sleep! He is enjoying a well deserved rest!</div>
-
-        <!-- COMPUTER TREATS TEXT  -->
-
-        <div id="computerJerkyText">Spot gave Fido a delicious piece of jerky! Yummy!</div>
-        <div id="computerChewyBeefText">Spot gave Fido some Chewy Beef! Delicious!</div>
-        <div id="computerMilkBoneText">Spot gave Fido a Milk Bone! Tasty!</div>
-        <div id="computerChickenSticksText">Spot gave Fido some Chicken Sticks! Very good!</div>
-
-        <!-- COMPUTER TOYS TEXT  -->
-
-        <div id="computerFrisbeeText">Spot gave Fido a Frisbee! Woah!</div>
-        <div id="computerSqueakyBallText">Spot gave Fido a Squeaky Ball! It's very noisy!</div>
-        <div id="computerGiraffePlushText">Spot gave Fido a Giraffe Plush!</div>
-        <div id="computerRubberBoneText">Spot gave Fido a Rubber Bone! Exciting!</div>
-
-        <!-- MOVES DESCRIPTION -->
-        <div id="danceDescription">Dance increases the opponent pet's Happiness by 50 points</div>
-        <div id="playfulBarkDescription">Playful Bark increases the opponent pet's Happiness by 70 points</div>
-        <div id="singDescription">Sing increases the opponent pet's Happiness by 30 points</div>
-        <div id="sleepDescription">Sleep increases the opponent pet's Happiness by 40 points</div>
-
-        <!-- TREATS DESCRIPTION  -->
-
-        <div id="jerkyDescription">Jerky increases the opponent pet's Happiness by 30 points</div>
-        <div id="chewyBeefDescription">Chewy Beef increases the opponent pet's Happiness by 40 points</div>
-        <div id="milkBoneDescription">Milk Bone increases the opponent pet's Happiness by 50 points</div>
-        <div id="chickenSticksDescription">Chicken Sticks increase the opponent pet's Happiness by 20 points</div>
-
-        <!-- TOYS DESCRIPTION  -->
-
-        <div id="frisbeeDescription">Frisbee increases the opponent pet's Happiness by 50 points</div>
-        <div id="squeakyBallDescription">Squeaky Ball increases the opponent pet's Happiness by 30 points</div>
-        <div id="giraffePlushDescription">Giraffe Plush increases the opponent pet's Happiness by 20 points</div>
-        <div id="rubberBoneDescription">Rubber Bone increases the opponent pet's Happiness by 40 points</div>
+        <canvas class="canvas2"></canvas>
       </div>
-
-      <!-- RENDERED WINDOWS -->
-      <div id="instructions"></div>
-      <div id="victory">VICTORY!!!!</div>
-      <div id="defeat">DEFEAT</div>
-      <div id="playerLeaveScreen">Thanks for playing!</div>
-      <div id="roundComplete">Round Complete!</div>
-      
-      <canvas class="canvas2"></canvas>
-    </div>
+      <div class="inspiration">
+        <h2>Inspiration</h2>
+        <p id="inspirationText">The inspiration for this game was</p>
+      </div>
+  </div>
   </body>
 
 </html>

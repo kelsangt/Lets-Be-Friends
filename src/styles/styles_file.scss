@@ -52,12 +52,60 @@ body {
     width: 100px;
 }
 
+.everything {
+    display: flex;
+    // align-content: center;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.instructions {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Nanum Pen Script', cursive;
+    color: purple;
+    font-size: 50px;
+    margin-right: 50px;
+
+}
+
+.inspiration {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    font-family: 'Nanum Pen Script', cursive;
+    color: purple;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+#instructionsh2 {
+    margin-bottom: 40px;
+}
+
+#instructionsText {
+    font-family: 'Pangolin', cursive;
+    font-size: 24px;
+}
+
+#inspirationText {
+    font-family: 'Pangolin', cursive;
+    font-size: 24px;
+}
+
 .main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 600px;
-    margin: auto;
 }
 
 .gamescreen {
@@ -132,7 +180,7 @@ body {
 
 #mainTitle {
     font-family: 'Nanum Pen Script', cursive;
-    font-size: 100px;
+    font-size: 107px;
     color: white;
 }
 
@@ -731,7 +779,9 @@ body {
     width: 300px;
     z-index: 10;
     height: 300px;
-    background-color: yellowgreen;
+    top: 90px;
+    left: -50px;
+    background-color: yellow;
     display: none;
 }
 
