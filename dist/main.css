@@ -25,6 +25,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	background-color: rgb(203, 153, 203);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -52,687 +53,628 @@ table {
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+.canvas {
+  height: 100px;
+  width: 100px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: auto;
+}
+
+#mainTitle {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 100px;
+  color: white;
+}
+
+#myName {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 50px;
+  color: white;
+}
+
 #backgroundmain {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+  z-index: 1;
+}
+
+.topOfPage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navLinks {
+  flex-basis: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#githublogo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+#linkedinlogo {
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
 
 #maintext {
   background-color: palegoldenrod;
   z-index: 1;
-  position: absolute;
+  position: relative;
   width: 498px;
   height: 80px;
-  top: 280px;
   border: 1px solid black;
 }
 
 #treats {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 30px;
-  left: 250px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
+  top: 50px;
+  left: -100px;
 }
 
 #moves {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 30px;
-  left: 250px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
+  top: 15px;
 }
 
 #toys {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 30px;
-  left: 360px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
+  top: 15px;
+  left: -90px;
 }
 
 #leave {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 30px;
-  left: 360px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
+  top: -150px;
+  left: 160px;
 }
 
 #dance {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 20px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #playfulBark {
-  position: absolute;
+  position: relative;
   height: 30px;
   width: 120px;
-  left: 20px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #sing {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 150px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #sleep {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 150px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #maintextpng {
-  position: absolute;
-  left: -3px;
-  top: 275px;
+  position: relative;
+  top: -230px;
   width: 515px;
   z-index: 1;
   display: block;
 }
 
 #whatsnext {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 150px;
   height: 50px;
-  top: 310px;
-  left: 30px;
+  top: -290px;
+  left: -150px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  background: none;
 }
 
 #danceText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #playfulBarkText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #singText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #sleepText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #jerky {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 20px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #chewyBeef {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 20px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #milkBone {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 150px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #chickenSticks {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 150px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #jerkyText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #chewyBeefText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #milkBoneText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #chickenSticksText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #frisbee {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 20px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #squeakyBall {
-  position: absolute;
+  position: relative;
   height: 30px;
   width: 120px;
-  left: 20px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #rubberBone {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 150px;
-  top: 325px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #giraffePlush {
-  position: absolute;
+  position: relative;
   width: 120px;
   height: 30px;
-  left: 150px;
-  top: 290px;
   z-index: 2;
   background-color: pink;
   display: none;
 }
 
 #frisbeeText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #squeakyBallText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #giraffePlushText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #rubberBoneText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #danceDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #playfulBarkDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #singDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #sleepDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerDanceText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerPlayfulBarkText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerSingText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerSleepText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerJerkyText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerChewyBeefText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerMilkBoneText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerChickenSticksText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerFrisbeeText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerSqueakyBallText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerGiraffePlushText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #computerRubberBoneText {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 310px;
-  left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #instructions {
-  position: absolute;
+  position: relative;
   z-index: 10;
   border: 1px solid black;
   width: 300px;
   height: 300px;
-  top: 200px;
-  left: 200px;
   background-color: aqua;
   display: none;
 }
 
 #victory {
-  position: absolute;
+  position: relative;
   border: 1px solid black;
   width: 300px;
   z-index: 10;
   height: 300px;
-  top: 50px;
-  left: 100px;
   background-color: pink;
   display: none;
 }
 
 #defeat {
-  position: absolute;
+  position: relative;
   border: 1px solid black;
   width: 300px;
   z-index: 10;
   height: 300px;
-  top: 50px;
-  left: 100px;
   background-color: red;
   display: none;
 }
 
 #roundComplete {
-  position: absolute;
+  position: relative;
   border: 1px solid black;
   width: 300px;
   z-index: 10;
   height: 300px;
-  top: 50px;
-  left: 100px;
   background-color: aqua;
   display: none;
 }
 
 #playerLeaveScreen {
-  position: absolute;
+  position: relative;
   border: 1px solid black;
   width: 300px;
   z-index: 10;
   height: 300px;
-  top: 50px;
-  left: 100px;
   background-color: yellowgreen;
   display: none;
 }
 
 #jerkyDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #chewyBeefDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #milkBoneDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #chickenSticksDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #frisbeeDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #giraffePlushDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #rubberBoneDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #squeakyBallDescription {
-  position: absolute;
+  position: relative;
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: 295px;
-  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
 }
 
 #corgi2 {
-  height: 12%;
-  position: absolute;
+  height: 100px;
+  position: relative;
+  top: -200px;
+  left: 350px;
+  background: none;
   z-index: 10;
-  top: 70px;
-  left: 330px;
 }
 
 #playerpet2 {
-  height: 20%;
-  position: absolute;
-  z-index: 0;
-  top: 160px;
-  left: 30px;
+  height: 200px;
+  position: relative;
+  background: none;
+  top: -120px;
+  z-index: 1;
 }
