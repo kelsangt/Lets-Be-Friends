@@ -43,6 +43,10 @@
 //     z-index: -1;
 // }
 
+body {
+    background-color: rgb(203, 153, 203);
+}
+
 .canvas {
     height: 100px;
     width: 100px;
@@ -90,6 +94,34 @@
     top: 11px;
 }
 
+.specifictreats {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background: none;
+    width: 300px;
+    left: 15px;
+    top: 11px;
+}
+
+.specifictoys {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    background: none;
+    width: 300px;
+    left: 15px;
+    top: 11px;
+}
+
+#frisbee, #squeakyBall, #giraffePlush, #rubberBone {
+    margin: 4px;
+}
+
+#jerky, #milkBone, #chewyBeef, #chickenSticks {
+    margin: 4px;
+}
+
 #dance, #sing, #playfulBark, #sleep {
     margin: 4px;
 }
@@ -134,17 +166,18 @@
     flex-wrap: wrap;
 }
 
-#githublogo {
-    position: relative;
-    width: 50px;
-    height: 50px;
+#githublink {
+    font-size: 40px;
+    margin: 10px;
+    color: purple
 }
 
-#linkedinlogo {
-    position: relative;
-    width: 50px;
-    height: 50px;
+#linkedinlink {
+    font-size: 40px;
+    margin: 10px;
+    color: purple;
 }
+
 
 // #corgi {
 //     display: none;
@@ -271,9 +304,11 @@
 #danceText {
     position: relative;
     z-index: 3;
-    background: none;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
+    background: none;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -283,6 +318,9 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
+    background: none;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -292,6 +330,9 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
+    background: none;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -301,6 +342,9 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
+    background: none;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -350,6 +394,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -359,6 +405,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -368,6 +416,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -377,6 +427,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -426,6 +478,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -435,6 +489,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -444,6 +500,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -453,6 +511,8 @@
     z-index: 3;
     width: 600px;
     height: 50px;
+    top: 30px;
+    left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -683,6 +743,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -692,6 +754,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -701,6 +765,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -710,6 +776,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -719,6 +787,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -728,6 +798,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -737,6 +809,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }
@@ -746,6 +820,8 @@
     z-index: 3;
     width: 180px;
     height: 50px;
+    top: -50px;
+    left: 300px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
 }

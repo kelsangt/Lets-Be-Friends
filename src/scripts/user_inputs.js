@@ -132,6 +132,7 @@ class UserInputs {
             this.show(danceText);
             this.hide(danceDescription);
             this.opponentPet.hp += 50;  
+            // 
             console.log("Opponent HP: " + this.opponentPet.hp);
             // console.log("Current turn: " + this.mainGame.turn);
             // this.mainGame.turn += 1;
