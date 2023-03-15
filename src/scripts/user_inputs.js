@@ -8,7 +8,8 @@ class UserInputs {
         this.opponentPet = opponentPet;
         this.pickDecision();
         this.computerInputs = new ComputerInputs(mainGame, playerPet, opponentPet);
-        const backgroundmain = document.getElementById("backgroundmain");
+        this.gamescreen = document.querySelector(".gamescreen");
+        this.textbox = document.querySelector(".textbox");
         const roundComplete = document.getElementById("roundComplete");
         const victory = document.getElementById("victory");
         const defeat = document.getElementById("defeat");
@@ -449,8 +450,8 @@ class UserInputs {
     }
 
     renderAll(){
-        this.show(backgroundmain);
-        this.show(maintextpng);
+        this.show(this.gamescreen);
+        this.show(this.textbox);
         this.show(whatsnext);
         this.show(moves);
         this.show(treats);
@@ -474,8 +475,8 @@ class UserInputs {
     }
 
     renderFade(){
-        this.hide(backgroundmain);
-        this.hide(maintextpng);
+        this.hide(this.gamescreen);
+        this.hide(this.textbox);
         this.show(roundComplete);
     }
 
@@ -497,20 +498,20 @@ class UserInputs {
     }
 
     renderVictory(){
-        this.hide(backgroundmain);
-        this.hide(maintextpng);
+        this.hide(this.gamescreen);
+        this.hide(this.textbox);
         this.show(victory);
     }
 
     renderDefeat(){
-        this.hide(backgroundmain);
-        this.hide(maintextpng);
+        this.hide(this.gamescreen);
+        this.hide(this.textbox);
         this.show(defeat);
     }
 
     renderLeave(){
-        this.hide(backgroundmain);
-        this.hide(maintextpng);
+        this.hide(this.gamescreen);
+        this.hide(this.textbox);
         this.clear();
         this.show(playerLeaveScreen);
     }
