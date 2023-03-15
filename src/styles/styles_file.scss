@@ -54,8 +54,6 @@ body {
 
 .everything {
     display: flex;
-    // align-content: center;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -185,8 +183,8 @@ body {
 }
 
 #myName {
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 50px;
+    font-family: 'Pangolin', cursive;
+    font-size: 30px;
     color: white;
 }
 
