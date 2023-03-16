@@ -16,8 +16,8 @@ In Let's Be Friends, users will be able to:
 
 
 In addition, this project will include:
-- An instructions window that will explain the game and the rules of the game
-- Animations for the pets
+- An instructions portion that will explain the game and the rules of the game
+- Animations for the decisions choices 
 - A README
 
 # Wireframe
