@@ -58,7 +58,7 @@ body {
 
 .canvas {
   height: 100px;
-  width: 100px;
+  width: 600px;
 }
 
 .everything {
@@ -91,6 +91,27 @@ body {
   color: purple;
   font-size: 50px;
   margin-left: 50px;
+}
+
+.scoreboard {
+  display: flex;
+  font-family: "Pangolin", cursive;
+  font-size: 22px;
+}
+
+#playerScore {
+  margin: 30px;
+  text-align: center;
+}
+
+#opponentScore {
+  margin: 30px;
+  text-align: center;
+}
+
+#currentRound {
+  margin: 30px;
+  text-align: center;
 }
 
 #nextarrow {
