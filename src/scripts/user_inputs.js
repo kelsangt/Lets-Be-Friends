@@ -88,7 +88,6 @@ class UserInputs {
         let treats = document.getElementById("treats");
         this.show(treats);
         treats.addEventListener("click", e => {
-            console.log("jerky");
             this.hide(moves);
             this.hide(treats);
             this.hide(toys);
@@ -103,7 +102,6 @@ class UserInputs {
         let toys = document.getElementById("toys");
         this.show(toys);
         toys.addEventListener("click", e => {
-            console.log("toys");
             this.hide(moves);
             this.hide(treats);
             this.hide(toys);
@@ -118,7 +116,6 @@ class UserInputs {
         let leave = document.getElementById("leave");
         this.show(leave);
         leave.addEventListener("click", e => {
-            console.log("leave");
             this.renderLeave();
             // this.mainGame.playerLeave = true;
             // this.hide(whatsnext);
@@ -138,13 +135,6 @@ class UserInputs {
             this.hide(danceDescription);
             this.opponentPet.hp += 50;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            // 
-            console.log("Opponent HP: " + this.opponentPet.hp);
-            // console.log("Current turn: " + this.mainGame.turn);
-            // this.mainGame.turn += 1;
-            // this.mainGame.shouldContinue = true;
-            // console.log("Current turn: " + this.mainGame.turn);
-            // console.log(this.mainGame.shouldContinue);
             
             
             // canvasSecond.ctx. = ; this will do animation for dancing    
@@ -175,7 +165,6 @@ class UserInputs {
             this.hide(playfulBarkDescription);
             this.opponentPet.hp += 70;  
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         playfulBarkText.addEventListener("click", e => {
@@ -201,7 +190,6 @@ class UserInputs {
             this.hide(singDescription);
             this.opponentPet.hp += 30;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         singText.addEventListener("click", e => {
@@ -227,7 +215,6 @@ class UserInputs {
             this.hide(sleepDescription);
             this.opponentPet.hp += 40;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         sleepText.addEventListener("click", e => {
@@ -255,7 +242,6 @@ class UserInputs {
             this.hide(jerkyDescription);
             this.opponentPet.hp += 30;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         jerkyText.addEventListener("click", e => {
@@ -281,7 +267,6 @@ class UserInputs {
             this.hide(chewyBeefDescription);
             this.opponentPet.hp += 40;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         chewyBeefText.addEventListener("click", e => {
@@ -307,7 +292,6 @@ class UserInputs {
             this.hide(milkBoneDescription);
             this.opponentPet.hp += 50;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         milkBoneText.addEventListener("click", e => {
@@ -333,7 +317,6 @@ class UserInputs {
             this.hide(chickenSticksDescription);
             this.opponentPet.hp += 20;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         chickenSticksText.addEventListener("click", e => {
@@ -363,7 +346,6 @@ class UserInputs {
             this.hide(frisbeeDescription);
             this.opponentPet.hp += 50;  
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         frisbeeText.addEventListener("click", e => {
@@ -389,7 +371,6 @@ class UserInputs {
             this.hide(squeakyBallDescription);
             this.opponentPet.hp += 30; 
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         squeakyBallText.addEventListener("click", e => {
@@ -415,7 +396,6 @@ class UserInputs {
             this.hide(giraffePlushDescription);
             this.opponentPet.hp += 20; 
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         giraffePlushText.addEventListener("click", e => {
@@ -441,7 +421,6 @@ class UserInputs {
             this.hide(rubberBoneDescription);
             this.opponentPet.hp += 40; 
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
-            console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
         rubberBoneText.addEventListener("click", e => {

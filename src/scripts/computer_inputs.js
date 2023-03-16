@@ -32,7 +32,6 @@ class ComputerInputs {
         if(this.opponentPet.hp <300){
             this.playerPet.hp += pickedChoiceVal;
             playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
-            console.log("Player HP: " + this.playerPet.hp);
         }
         if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){
 
@@ -55,8 +54,6 @@ class ComputerInputs {
             // this.mainGame.shouldContinue = true;
         }
         userInput.checkEverything();     // Tracking all game conditions 
-        console.log("LOSSES: " + this.mainGame.losses);
-        console.log("WINS: " + this.mainGame.wins);
     }
 
 }
