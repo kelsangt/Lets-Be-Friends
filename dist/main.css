@@ -93,6 +93,13 @@ body {
   margin-left: 50px;
 }
 
+#nextarrow {
+  position: relative;
+  left: 440px;
+  top: 60px;
+  display: none;
+}
+
 #instructionsh2 {
   margin-bottom: 40px;
 }
@@ -324,7 +331,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   background: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -336,7 +343,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   background: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -348,7 +355,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   background: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -360,7 +367,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   background: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -408,7 +415,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -419,7 +426,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -430,7 +437,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -441,7 +448,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -488,7 +495,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -499,7 +506,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -510,7 +517,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -521,7 +528,7 @@ body {
   z-index: 3;
   width: 600px;
   height: 50px;
-  top: 30px;
+  top: 20px;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
@@ -612,7 +619,7 @@ body {
 }
 
 #computerDanceText, #computerPlayfulBarkText, #computerSingText, #computerSleepText {
-  top: 30px;
+  top: 20px;
   left: 20px;
 }
 
@@ -653,7 +660,7 @@ body {
 }
 
 #computerJerkyText, #computerChewyBeefText, #computerMilkBoneText, #computerChickenSticksText {
-  top: 30px;
+  top: 20px;
   left: 20px;
 }
 
@@ -694,57 +701,63 @@ body {
 }
 
 #computerFrisbeeText, #computerSqueakyBallText, #computerGiraffePlushText, #computerRubberBoneText {
-  top: 30px;
+  top: 20px;
   left: 20px;
-}
-
-#instructions {
-  position: relative;
-  z-index: 10;
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  background-color: aqua;
-  display: none;
 }
 
 #victory {
   position: relative;
-  border: 1px solid black;
   width: 508px;
-  height: 373px;
+  height: 374px;
+  text-align: center;
+  line-height: 350px;
+  font-family: "Pangolin", cursive;
+  font-size: 20px;
   z-index: 10;
   background-color: pink;
+  color: purple;
   display: none;
 }
 
 #defeat {
   position: relative;
-  border: 1px solid black;
   width: 508px;
-  height: 373px;
+  height: 374px;
+  text-align: center;
+  line-height: 350px;
+  font-family: "Pangolin", cursive;
+  font-size: 20px;
   z-index: 10;
-  background-color: red;
+  background-color: pink;
+  color: purple;
   display: none;
 }
 
 #roundComplete {
   position: relative;
-  border: 1px solid black;
   width: 508px;
-  height: 373px;
+  height: 374px;
+  text-align: center;
+  line-height: 350px;
+  font-family: "Pangolin", cursive;
+  font-size: 20px;
   z-index: 10;
-  background-color: aqua;
+  background-color: pink;
+  color: purple;
   display: none;
 }
 
 #playerLeaveScreen {
   position: relative;
-  border: 1px solid black;
   width: 508px;
-  height: 373px;
+  height: 374px;
+  text-align: center;
+  line-height: 350px;
+  font-family: "Pangolin", cursive;
+  font-size: 20px;
   z-index: 10;
-  background-color: yellow;
+  background-color: pink;
+  color: purple;
   display: none;
 }
 

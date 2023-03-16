@@ -14,6 +14,7 @@ class UserInputs {
         const victory = document.getElementById("victory");
         const defeat = document.getElementById("defeat");
         const playerLeaveScreen = document.getElementById("playerLeaveScreen");
+        const nextarrow = document.getElementById("nextarrow");
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
     }
@@ -130,6 +131,7 @@ class UserInputs {
             this.hide(sing);
             this.hide(sleep);
             this.show(danceText);
+            this.show(nextarrow);
             this.hide(danceDescription);
             this.opponentPet.hp += 50;  
             // 
@@ -165,6 +167,7 @@ class UserInputs {
             this.hide(sing);
             this.hide(sleep);
             this.show(playfulBarkText);
+            this.show(nextarrow);
             this.hide(playfulBarkDescription);
             this.opponentPet.hp += 700;  
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -189,6 +192,7 @@ class UserInputs {
             this.hide(sing);
             this.hide(sleep);
             this.show(singText);
+            this.show(nextarrow);
             this.hide(singDescription);
             this.opponentPet.hp += 30;
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -213,6 +217,7 @@ class UserInputs {
             this.hide(sing);
             this.hide(sleep);
             this.show(sleepText);
+            this.show(nextarrow);
             this.hide(sleepDescription);
             this.opponentPet.hp += 40;
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -239,6 +244,7 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(jerkyText);
+            this.show(nextarrow);
             this.hide(jerkyDescription);
             this.opponentPet.hp += 30;
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -263,6 +269,7 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(chewyBeefText);
+            this.show(nextarrow);
             this.hide(chewyBeefDescription);
             this.opponentPet.hp += 40;
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -287,6 +294,7 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(milkBoneText);
+            this.show(nextarrow);
             this.hide(milkBoneDescription);
             this.opponentPet.hp += 50;
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -311,6 +319,7 @@ class UserInputs {
             this.hide(chickenSticks);
             this.hide(jerky);
             this.show(chickenSticksText);
+            this.show(nextarrow);
             this.hide(chickenSticksDescription);
             this.opponentPet.hp += 20;
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -339,6 +348,7 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(frisbeeText);
+            this.show(nextarrow);
             this.hide(frisbeeDescription);
             this.opponentPet.hp += 50;  
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -363,6 +373,7 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(squeakyBallText);
+            this.show(nextarrow);
             this.hide(squeakyBallDescription);
             this.opponentPet.hp += 30;  
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -387,6 +398,7 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(giraffePlushText);
+            this.show(nextarrow);
             this.hide(giraffePlushDescription);
             this.opponentPet.hp += 20;  
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -411,6 +423,7 @@ class UserInputs {
             this.hide(giraffePlush);
             this.hide(rubberBone);
             this.show(rubberBoneText);
+            this.show(nextarrow);
             this.hide(rubberBoneDescription);
             this.opponentPet.hp += 40;  
             console.log("Opponent HP: " + this.opponentPet.hp);
@@ -430,6 +443,7 @@ class UserInputs {
 
         roundComplete.addEventListener("click", e => {
             this.hide(roundComplete);
+            this.hide(nextarrow);
             this.resetRound();
             this.renderAll();
         })

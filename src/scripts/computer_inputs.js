@@ -41,6 +41,7 @@ class ComputerInputs {
             element.addEventListener("click", e => {
                 element.style.display = "none";
                 if((this.playerPet.hp < 300) ){
+                    userInput.hide(nextarrow);
                     userInput.show(moves);
                     userInput.show(treats);
                     userInput.show(toys);
