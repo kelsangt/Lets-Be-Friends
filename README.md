@@ -2,7 +2,7 @@
 
 # <a href="https://kelsangt.github.io/Lets-Be-Friends/">Play the game here</a>
 
-<img width=800 alt="game_overview" src="images/game_overview.png">
+<img width=800 alt="game_overview" src="images/game_overview2.png">
 
 # Description 
 
