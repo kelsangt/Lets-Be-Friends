@@ -1,8 +1,16 @@
 # Let's Be Friends
 
+# Link: https://kelsangt.github.io/Lets-Be-Friends/
+
+<img alt="game_overview" src="images/game_overview">
+
+# Description 
+
 Let's Be Friends is a turn-based game where the objective is to make your opponent's pet happy. The user competes and employs strategies to win against their opponent, choosing what moves, treats, and toys will be used in order to secure victory.
 
 As the main objective of the game is for the pets to be happy, players start out with their pets' happiness meter being set to 0. Throughout the interaction, moves made by the player and the opponent will affect each other's pets' happiness meter. To win, the user will have to win 3 rounds against their opponent. If the user loses one round, the game is over. The user will, at any point during the game, be able to leave the game if they choose to. Winning is great, but the main idea for this game is that everyone becomes happy and hopefully strives to make one another happy.
+
+# Controls 
 
 # Functionality
 
@@ -55,3 +63,4 @@ This project will be implemented with these technologies:
 
 - This game can be expanded by adding a 2D walking aspect: The user model can walk around a town, interacting with other people to begin interactions. This will then transition to the competitive interaction mode, where the user makes decisions in order to win the interaction.
 - Another expansion is the ability to have multiple pets and swap between them during the competition
+- This game could also have animations for specific moves made by the pets and idle animation
