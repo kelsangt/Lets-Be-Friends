@@ -696,9 +696,9 @@ body {
 #victory {
   position: relative;
   border: 1px solid black;
-  width: 300px;
+  width: 508px;
+  height: 373px;
   z-index: 10;
-  height: 300px;
   background-color: pink;
   display: none;
 }
@@ -706,9 +706,9 @@ body {
 #defeat {
   position: relative;
   border: 1px solid black;
-  width: 300px;
+  width: 508px;
+  height: 373px;
   z-index: 10;
-  height: 300px;
   background-color: red;
   display: none;
 }
@@ -716,9 +716,9 @@ body {
 #roundComplete {
   position: relative;
   border: 1px solid black;
-  width: 300px;
+  width: 508px;
+  height: 373px;
   z-index: 10;
-  height: 300px;
   background-color: aqua;
   display: none;
 }
@@ -726,11 +726,9 @@ body {
 #playerLeaveScreen {
   position: relative;
   border: 1px solid black;
-  width: 300px;
+  width: 508px;
+  height: 373px;
   z-index: 10;
-  height: 300px;
-  top: 90px;
-  left: -50px;
   background-color: yellow;
   display: none;
 }
