@@ -652,6 +652,11 @@ body {
     display: none;
 }
 
+#computerDanceText, #computerPlayfulBarkText, #computerSingText, #computerSleepText {
+    top: 30px;
+    left: 20px;
+}
+
 // COMPUTER TREATS TEXT
 
 #computerJerkyText {
@@ -688,6 +693,11 @@ body {
     height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
+}
+
+#computerJerkyText, #computerChewyBeefText, #computerMilkBoneText, #computerChickenSticksText {
+    top: 30px;
+    left: 20px;
 }
 
 // COMPUTER TOYS TEXT
@@ -728,6 +738,10 @@ body {
     display: none;
 }
 
+#computerFrisbeeText, #computerSqueakyBallText, #computerGiraffePlushText, #computerRubberBoneText {
+    top: 30px;
+    left: 20px;
+}
 
 // RENDER WINDOWS
 
