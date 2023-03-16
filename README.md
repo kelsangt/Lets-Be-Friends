@@ -2,7 +2,7 @@
 
 # Link: https://kelsangt.github.io/Lets-Be-Friends/
 
-<img alt="game_overview" src="images/game_overview">
+<img width=800 alt="game_overview" src="images/game_overview.png">
 
 # Description 
 
@@ -11,6 +11,10 @@ Let's Be Friends is a turn-based game where the objective is to make your oppone
 As the main objective of the game is for the pets to be happy, players start out with their pets' happiness meter being set to 0. Throughout the interaction, moves made by the player and the opponent will affect each other's pets' happiness meter. To win, the user will have to win 3 rounds against their opponent. If the user loses one round, the game is over. The user will, at any point during the game, be able to leave the game if they choose to. Winning is great, but the main idea for this game is that everyone becomes happy and hopefully strives to make one another happy.
 
 # Controls 
+
+Users will be able to play the game using mouse clicks.
+
+<img width=500 alt="user_clicks" src="images/user_clicks.png">
 
 # Functionality
 
