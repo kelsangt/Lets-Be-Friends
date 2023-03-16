@@ -71,32 +71,36 @@ body {
 
 .instructions {
   display: flex;
-  width: 300px;
+  width: 400px;
   height: 300px;
   flex-wrap: wrap;
   justify-content: center;
   font-family: "Nanum Pen Script", cursive;
   color: purple;
   font-size: 50px;
-  margin-right: 50px;
+  margin-right: 100px;
+  margin-top: -100px;
 }
 
 .inspiration {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 400px;
   height: 300px;
   font-family: "Nanum Pen Script", cursive;
   color: purple;
   font-size: 50px;
-  margin-left: 50px;
+  margin-left: 100px;
+  margin-top: -100px;
 }
 
 .scoreboard {
   display: flex;
   font-family: "Pangolin", cursive;
   font-size: 22px;
+  color: purple;
+  margin-top: 40px;
 }
 
 #playerScore {
@@ -127,12 +131,18 @@ body {
 
 #instructionsText {
   font-family: "Pangolin", cursive;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: -20px;
+  line-height: 140%;
+  text-align: center;
 }
 
 #inspirationText {
   font-family: "Pangolin", cursive;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 140%;
+  text-align: center;
 }
 
 .main {
@@ -140,6 +150,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   width: 600px;
+  margin-top: 20px;
 }
 
 .gamescreen {
