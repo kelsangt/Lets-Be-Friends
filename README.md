@@ -1,6 +1,6 @@
 # Let's Be Friends
 
-# Link: https://kelsangt.github.io/Lets-Be-Friends/
+# <a href="https://kelsangt.github.io/Lets-Be-Friends/">Play the game here</a>
 
 <img width=800 alt="game_overview" src="images/game_overview.png">
 
@@ -44,6 +44,103 @@ In addition, this project will include:
 - The Game prompts/Moves box will update to ask the user to make a move, and display the moves, treats, toys as the user selects one of them from the decisions box on the right.
 - The Decisions box contains different choices for moves, treats, and toys. It also contains the ability for the user to leave the game.
 
+# Technical Implementation 
+
+Event listeners process moves and show description of moves
+
+```javascript
+let dance = document.getElementById("dance");
+
+dance.addEventListener("click", e => {
+    this.hide(dance);
+    this.hide(playfulBark);
+    this.hide(sing);
+    this.hide(sleep);
+    this.show(danceText);
+    this.show(nextarrow);
+    this.hide(danceDescription);
+    this.opponentPet.hp += 50;
+    opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+});
+
+danceText.addEventListener("click", e => {
+    this.hide(danceText);
+    this.computerInputs.pickDecision(this);
+});
+
+
+dance.addEventListener("mouseover", e => {
+    this.hide(playfulBarkDescription);
+    this.hide(singDescription);
+    this.hide(sleepDescription);
+    this.show(danceDescription);
+});
+```
+
+Computer move logic
+
+```javascript
+pickDecision(userInput){
+    const choicesArray = [
+        ["Dance", 50],
+        ["Sing", 30],
+        ["Sleep", 40],
+        ["PlayfulBark", 50],
+        ["Jerky", 30],
+        ["ChewyBeef", 40],
+        ["MilkBone", 50],
+        ["ChickenSticks", 20],
+        ["Frisbee", 50],
+        ["SqueakyBall", 30],
+        ["GiraffePlush", 20],
+        ["RubberBone", 40]
+    ];
+    let randomIndex = (Math.floor(Math.random() * choicesArray.length));
+    let pickedChoiceName = choicesArray[randomIndex][0];
+    let pickedChoiceVal = choicesArray[randomIndex][1];
+    
+    if(this.opponentPet.hp <300){
+        this.playerPet.hp += pickedChoiceVal;
+        playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
+    }
+    if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){
+        let element = document.getElementById("computer" + pickedChoiceName + "Text");
+        element.style.display = "block";
+        element.addEventListener("click", e => {
+            element.style.display = "none";
+            if((this.playerPet.hp < 300) ){
+                userInput.hide(nextarrow);
+                userInput.show(moves);
+                userInput.show(treats);
+                userInput.show(toys);
+                userInput.show(leave);
+                userInput.show(whatsnext);
+            }
+        });
+    }
+    userInput.checkEverything();    
+}
+```
+
+Checking for game conditions after user and computer both make a move
+
+```javascript
+checkEverything(){
+    if(this.playerPet.hp >= 300){
+        this.renderDefeat();
+        this.mainGame.losses += 1;
+    }
+    if(this.opponentPet.hp >= 300){
+        if (this.mainGame.wins < 2){
+            this.renderFade();
+        }
+        this.mainGame.wins += 1;
+    }
+    if(this.mainGame.wins >= 3){
+        this.renderVictory();
+    }
+}
+```
 
 # Technologies, Libraries, APIs
 
