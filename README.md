@@ -16,7 +16,7 @@ Users are able to play the game using mouse clicks. Users can also click on dial
 
 <img width=500 alt="user_clicks" src="images/user_clicks.png">
 
-# Functionality
+# Functionality & MVPs
 
 In Let's Be Friends, users are able to:
 
@@ -32,6 +32,9 @@ In addition, this project includes:
 - Animations for the decisions choices 
 - A README
 
+# Technical Details 
+
+Let's Be Friends is coded with vanilla Javascript. The game utilizes Canvas, HTML and CSS. Vanilla DOM manipulation is used to retrieve HTML elements and event listeners help handle game logic. This game also utilizes Object Oriented Programming. 
 
 # Technical Implementation 
 
