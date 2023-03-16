@@ -12,13 +12,13 @@ As the main objective of the game is for the pets to be happy, players start out
 
 # Controls 
 
-Users will be able to play the game using mouse clicks.
+Users are able to play the game using mouse clicks.
 
 <img width=500 alt="user_clicks" src="images/user_clicks.png">
 
 # Functionality
 
-In Let's Be Friends, users will be able to:
+In Let's Be Friends, users are able to:
 
 - Use their mouse to click on decisions to select the decision they want to make
 - React to the moves and decisions made by the opponent, which will be controlled by the computer
@@ -27,26 +27,15 @@ In Let's Be Friends, users will be able to:
 - Employ strategies in order to win through the use of moves, treats, and toys
 
 
-In addition, this project will include:
-- An instructions portion that will explain the game and the rules of the game
+In addition, this project includes:
+- An instructions portion that explains the game and its rules
 - Animations for the decisions choices 
 - A README
 
-# Wireframe
-
-<img width="860" alt="Kelsang_Tsering_Wireframe" src="https://user-images.githubusercontent.com/121586271/224147009-a1977a0d-b03c-452f-8899-414081e9f4cd.png">
-
-
-
-- The Game's title will be presented on the top of the screen.
-- The Nav links will include links to my GitHub and LinkedIn profiles
-- The game itself will be in the middle of the screen, composed of the portrayal of the user's pet, the opponent's pet, their respective stats, game prompt box, and user's decisions box.
-- The Game prompts/Moves box will update to ask the user to make a move, and display the moves, treats, toys as the user selects one of them from the decisions box on the right.
-- The Decisions box contains different choices for moves, treats, and toys. It also contains the ability for the user to leave the game.
 
 # Technical Implementation 
 
-Event listeners process moves and show description of moves
+**Event listeners process moves and show the descriptions of moves**
 
 ```javascript
 let dance = document.getElementById("dance");
@@ -77,7 +66,7 @@ dance.addEventListener("mouseover", e => {
 });
 ```
 
-Computer move logic
+**The computer chooses a move that it will use**
 
 ```javascript
 pickDecision(userInput){
@@ -122,7 +111,7 @@ pickDecision(userInput){
 }
 ```
 
-Checking for game conditions after user and computer both make a move
+**This function checks game conditions after both the user and the computer make a move**
 
 ```javascript
 checkEverything(){
@@ -142,9 +131,22 @@ checkEverything(){
 }
 ```
 
+# Wireframe
+
+<img width="860" alt="Kelsang_Tsering_Wireframe" src="https://user-images.githubusercontent.com/121586271/224147009-a1977a0d-b03c-452f-8899-414081e9f4cd.png">
+
+
+
+- The Game's title is presented on the top of the screen.
+- The Nav links include links to my GitHub and LinkedIn profiles
+- The game itself is located in the middle of the screen, composed of the portrayal of the user's pet, the opponent's pet, their respective stats, game prompt box, and user's decisions box.
+- The Game prompts/decisions box updates to ask the user to make a move, and display the moves, treats, toys as the user selects one of them from the decisions box on the right.
+- The Decisions box contains different choices for moves, treats, and toys. It also contains the ability for the user to leave the game.
+
+
 # Technologies, Libraries, APIs
 
-This project will be implemented with these technologies:
+This project is implemented with the following technologies:
 - `Canvas API` in order to display and render the game screen
 - `Webpack` and `Babel` to bundle Javascript code
 - `npm` to manage dependencies of the project 
@@ -160,8 +162,8 @@ This project will be implemented with these technologies:
 - **Thursday:** Deploy project to GitHub pages. Look over all the files and make revisions as needed.
 
 
-# Bonus Features
+# Additional Upcoming Features
 
-- This game can be expanded by adding a 2D walking aspect: The user model can walk around a town, interacting with other people to begin interactions. This will then transition to the competitive interaction mode, where the user makes decisions in order to win the interaction.
-- Another expansion is the ability to have multiple pets and swap between them during the competition
-- This game could also have animations for specific moves made by the pets and idle animation
+- 2D walking portion: The user model can walk around a town, interacting with other people to begin interactions. This will then transition to the interaction mode, where the user makes decisions in order to win the interaction.
+- Players can have multiple pets and swap between them during the interaction
+- Animations for specific moves made by the pets and idle animation
