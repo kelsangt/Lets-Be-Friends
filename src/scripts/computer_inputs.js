@@ -3,7 +3,7 @@ class ComputerInputs {
         this.mainGame = mainGame;
         this.playerPet = playerPet;
         this.opponentPet = opponentPet;
-
+        let playerScore = document.getElementById("playerScore");
         // Moves
 
     }
@@ -31,6 +31,7 @@ class ComputerInputs {
         
         if(this.opponentPet.hp <300){
             this.playerPet.hp += pickedChoiceVal;
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             console.log("Player HP: " + this.playerPet.hp);
         }
         if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){

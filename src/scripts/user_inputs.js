@@ -15,6 +15,9 @@ class UserInputs {
         const defeat = document.getElementById("defeat");
         const playerLeaveScreen = document.getElementById("playerLeaveScreen");
         const nextarrow = document.getElementById("nextarrow");
+        let playerScore = document.getElementById("playerScore");
+        let opponentScore = document.getElementById("opponentScore");
+        let currentRound = document.getElementById("currentRound");
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
     }
@@ -133,7 +136,8 @@ class UserInputs {
             this.show(danceText);
             this.show(nextarrow);
             this.hide(danceDescription);
-            this.opponentPet.hp += 50;  
+            this.opponentPet.hp += 50;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             // 
             console.log("Opponent HP: " + this.opponentPet.hp);
             // console.log("Current turn: " + this.mainGame.turn);
@@ -169,7 +173,8 @@ class UserInputs {
             this.show(playfulBarkText);
             this.show(nextarrow);
             this.hide(playfulBarkDescription);
-            this.opponentPet.hp += 700;  
+            this.opponentPet.hp += 70;  
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -195,6 +200,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(singDescription);
             this.opponentPet.hp += 30;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -220,6 +226,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(sleepDescription);
             this.opponentPet.hp += 40;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -247,6 +254,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(jerkyDescription);
             this.opponentPet.hp += 30;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -272,6 +280,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(chewyBeefDescription);
             this.opponentPet.hp += 40;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -297,6 +306,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(milkBoneDescription);
             this.opponentPet.hp += 50;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -322,6 +332,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(chickenSticksDescription);
             this.opponentPet.hp += 20;
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -351,6 +362,7 @@ class UserInputs {
             this.show(nextarrow);
             this.hide(frisbeeDescription);
             this.opponentPet.hp += 50;  
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -375,7 +387,8 @@ class UserInputs {
             this.show(squeakyBallText);
             this.show(nextarrow);
             this.hide(squeakyBallDescription);
-            this.opponentPet.hp += 30;  
+            this.opponentPet.hp += 30; 
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -400,7 +413,8 @@ class UserInputs {
             this.show(giraffePlushText);
             this.show(nextarrow);
             this.hide(giraffePlushDescription);
-            this.opponentPet.hp += 20;  
+            this.opponentPet.hp += 20; 
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -425,7 +439,8 @@ class UserInputs {
             this.show(rubberBoneText);
             this.show(nextarrow);
             this.hide(rubberBoneDescription);
-            this.opponentPet.hp += 40;  
+            this.opponentPet.hp += 40; 
+            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
             console.log("Opponent HP: " + this.opponentPet.hp);
         });
 
@@ -499,6 +514,10 @@ class UserInputs {
     resetRound(){
         this.playerPet.hp = 0;
         this.opponentPet.hp = 0;
+        playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
+        opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+        this.mainGame.currentRoundVal += 1;
+        currentRound.innerHTML = "Round: " + this.mainGame.currentRoundVal;
     }
 
     renderRoundWin(){

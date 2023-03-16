@@ -12,6 +12,7 @@ class MainGame {
         this.computerInputs = new ComputerInputs(this, this.playerPet, this.opponentPet);
         this.userInputs = new UserInputs(this, this.playerPet, this.opponentPet);
         this.shouldContinue = true;
+        this.currentRoundVal = 1;
         this.wins = 0;
         this.losses = 0;
         this.turn = 0;                // Game starts out with turn being 0 so the user can make the first choice
