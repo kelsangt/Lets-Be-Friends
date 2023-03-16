@@ -12,7 +12,7 @@ As the main objective of the game is for the pets to be happy, players start out
 
 # Controls 
 
-Users are able to play the game using mouse clicks.
+Users are able to play the game using mouse clicks. Users can also click on dialogue boxes to progress through the game.
 
 <img width=500 alt="user_clicks" src="images/user_clicks.png">
 
