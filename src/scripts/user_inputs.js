@@ -20,6 +20,8 @@ class UserInputs {
         let currentRound = document.getElementById("currentRound");
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
+        this.playerPet2 = document.getElementById("playerpet2");
+        this.playerPet3 = document.getElementById("playerpet3");
     }
     pickDecision(){
         const whatsnext = document.getElementById("whatsnext");
@@ -135,7 +137,11 @@ class UserInputs {
             this.hide(danceDescription);
             this.opponentPet.hp += 50;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            
+            // this.hide(this.playerPet2);
+            // this.show(this.playerPet3);
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
             
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });

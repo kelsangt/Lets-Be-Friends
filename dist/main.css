@@ -893,6 +893,10 @@ body {
   left: 330px;
 }
 
+#corgi2:hover {
+  animation: shake 0.2s;
+}
+
 #playerpet2 {
   height: 200px;
   position: relative;
