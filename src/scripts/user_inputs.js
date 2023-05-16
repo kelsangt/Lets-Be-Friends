@@ -21,7 +21,7 @@ class UserInputs {
         const canvas2 = document.querySelector(".canvas2");
         let canvasSecond = new Canvas(canvas2);
         this.playerPet2 = document.getElementById("playerpet2");
-        this.playerPet3 = document.getElementById("playerpet3");
+        this.corgi2 = document.getElementById("corgi2");
     }
     pickDecision(){
         const whatsnext = document.getElementById("whatsnext");
@@ -149,6 +149,12 @@ class UserInputs {
         danceText.addEventListener("click", e => {
             this.hide(danceText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            this.corgi2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
 

@@ -5,6 +5,7 @@ class ComputerInputs {
         this.opponentPet = opponentPet;
         let playerScore = document.getElementById("playerScore");
         // Moves
+        this.corgi2 = document.getElementById("corgi2");
 
     }
     pickDecision(userInput){
@@ -38,6 +39,7 @@ class ComputerInputs {
         
             let element = document.getElementById("computer" + pickedChoiceName + "Text");
             element.style.display = "block";
+            
             element.addEventListener("click", e => {
                 element.style.display = "none";
                 if((this.playerPet.hp < 300) ){
@@ -48,12 +50,16 @@ class ComputerInputs {
                     userInput.show(leave);
                     userInput.show(whatsnext);
                 }
+                this.corgi2.setAttribute('style',
+                    'animation: none;'
+                )
             });
             // this.mainGame.userInputs.clear();
             // this.mainGame.turn += 1;
             // this.mainGame.shouldContinue = true;
         }
         userInput.checkEverything();     // Tracking all game conditions 
+        
     }
 
 }
