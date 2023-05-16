@@ -4,6 +4,7 @@ class ComputerInputs {
         this.playerPet = playerPet;
         this.opponentPet = opponentPet;
         let playerScore = document.getElementById("playerScore");
+        let opponentScore = document.getElementById("opponentScore");
         // Moves
         this.corgi2 = document.getElementById("corgi2");
 
@@ -21,18 +22,26 @@ class ComputerInputs {
             ["ChewyBeef", 40],
             ["MilkBone", 50],
             ["ChickenSticks", 20],
-            ["Frisbee", 50],
-            ["SqueakyBall", 30],
-            ["GiraffePlush", 20],
-            ["RubberBone", 40]
+            ["Frisbee", -50],
+            ["SqueakyBall", -30],
+            ["GiraffePlush", -20],
+            ["RubberBone", -40]
         ];
         let randomIndex = (Math.floor(Math.random() * choicesArray.length));
         let pickedChoiceName = choicesArray[randomIndex][0];
         let pickedChoiceVal = choicesArray[randomIndex][1];
         
-        if(this.opponentPet.hp <300){
-            this.playerPet.hp += pickedChoiceVal;
-            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
+        if(this.opponentPet.hp < 300){
+            if(pickedChoiceVal < 0) {
+                if(this.opponentPet.hp >= Math.abs(pickedChoiceVal)){
+                    this.opponentPet.hp += pickedChoiceVal;
+                    opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+                }
+            } else {
+                this.playerPet.hp += pickedChoiceVal;
+                playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
+            }
+            
         }
         if ((this.opponentPet.hp < 300) && (this.playerPet.hp < 300)){
 

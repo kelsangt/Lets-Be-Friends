@@ -435,8 +435,10 @@ class UserInputs {
             this.show(frisbeeText);
             this.show(nextarrow);
             this.hide(frisbeeDescription);
-            this.opponentPet.hp += 50;  
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            if (this.playerPet.hp >= 50){
+                this.playerPet.hp -= 50;
+            }  
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -471,8 +473,10 @@ class UserInputs {
             this.show(squeakyBallText);
             this.show(nextarrow);
             this.hide(squeakyBallDescription);
-            this.opponentPet.hp += 30; 
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
+            if (this.playerPet.hp >= 30){
+                this.playerPet.hp -= 30;
+            }  
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -507,8 +511,10 @@ class UserInputs {
             this.show(giraffePlushText);
             this.show(nextarrow);
             this.hide(giraffePlushDescription);
-            this.opponentPet.hp += 20; 
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
+            if (this.playerPet.hp >= 20){
+                this.playerPet.hp -= 20;
+            }  
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -543,8 +549,10 @@ class UserInputs {
             this.show(rubberBoneText);
             this.show(nextarrow);
             this.hide(rubberBoneDescription);
-            this.opponentPet.hp += 40; 
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
+            if (this.playerPet.hp >= 40){
+                this.playerPet.hp -= 40;
+            }  
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
