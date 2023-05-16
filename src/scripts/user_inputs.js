@@ -137,8 +137,7 @@ class UserInputs {
             this.hide(danceDescription);
             this.opponentPet.hp += 50;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
-            // this.hide(this.playerPet2);
-            // this.show(this.playerPet3);
+
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -149,12 +148,15 @@ class UserInputs {
         danceText.addEventListener("click", e => {
             this.hide(danceText);
             this.computerInputs.pickDecision(this);
+
             this.playerPet2.setAttribute('style',
                 'animation: none;'
             )
-            this.corgi2.setAttribute('style',
-                'animation: shake 0.2s;'
-            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
 
@@ -177,11 +179,22 @@ class UserInputs {
             this.hide(playfulBarkDescription);
             this.opponentPet.hp += 70;  
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         playfulBarkText.addEventListener("click", e => {
             this.hide(playfulBarkText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         playfulBark.addEventListener("mouseover", e => {
@@ -202,11 +215,22 @@ class UserInputs {
             this.hide(singDescription);
             this.opponentPet.hp += 30;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         singText.addEventListener("click", e => {
             this.hide(singText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         sing.addEventListener("mouseover", e => {
@@ -227,11 +251,22 @@ class UserInputs {
             this.hide(sleepDescription);
             this.opponentPet.hp += 40;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         sleepText.addEventListener("click", e => {
             this.hide(sleepText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         sleep.addEventListener("mouseover", e => {
@@ -254,11 +289,22 @@ class UserInputs {
             this.hide(jerkyDescription);
             this.opponentPet.hp += 30;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         jerkyText.addEventListener("click", e => {
             this.hide(jerkyText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         jerky.addEventListener("mouseover", e => {
@@ -279,11 +325,22 @@ class UserInputs {
             this.hide(chewyBeefDescription);
             this.opponentPet.hp += 40;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         chewyBeefText.addEventListener("click", e => {
             this.hide(chewyBeefText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         chewyBeef.addEventListener("mouseover", e => {
@@ -304,11 +361,22 @@ class UserInputs {
             this.hide(milkBoneDescription);
             this.opponentPet.hp += 50;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         milkBoneText.addEventListener("click", e => {
             this.hide(milkBoneText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         milkBone.addEventListener("mouseover", e => {
@@ -329,11 +397,22 @@ class UserInputs {
             this.hide(chickenSticksDescription);
             this.opponentPet.hp += 20;
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         chickenSticksText.addEventListener("click", e => {
             this.hide(chickenSticksText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         chickenSticks.addEventListener("mouseover", e => {
@@ -358,11 +437,22 @@ class UserInputs {
             this.hide(frisbeeDescription);
             this.opponentPet.hp += 50;  
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         frisbeeText.addEventListener("click", e => {
             this.hide(frisbeeText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         frisbee.addEventListener("mouseover", e => {
@@ -383,11 +473,22 @@ class UserInputs {
             this.hide(squeakyBallDescription);
             this.opponentPet.hp += 30; 
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         squeakyBallText.addEventListener("click", e => {
             this.hide(squeakyBallText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         squeakyBall.addEventListener("mouseover", e => {
@@ -408,11 +509,22 @@ class UserInputs {
             this.hide(giraffePlushDescription);
             this.opponentPet.hp += 20; 
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         giraffePlushText.addEventListener("click", e => {
             this.hide(giraffePlushText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         giraffePlush.addEventListener("mouseover", e => {
@@ -433,11 +545,22 @@ class UserInputs {
             this.hide(rubberBoneDescription);
             this.opponentPet.hp += 40; 
             opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp; 
+            this.playerPet2.setAttribute('style',
+                'animation: shake 0.2s;'
+            )
         });
 
         rubberBoneText.addEventListener("click", e => {
             this.hide(rubberBoneText);
             this.computerInputs.pickDecision(this);
+            this.playerPet2.setAttribute('style',
+                'animation: none;'
+            )
+            if (this.opponentPet.hp < 300) {
+                this.corgi2.setAttribute('style',
+                    'animation: shake 0.2s;'
+                )
+            }
         });
 
         rubberBone.addEventListener("mouseover", e => {
