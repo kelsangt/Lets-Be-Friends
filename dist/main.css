@@ -95,6 +95,10 @@ body {
   margin-top: -100px;
 }
 
+#inspirationh2 {
+  color: white;
+}
+
 .scoreboard {
   display: flex;
   font-family: "Pangolin", cursive;
@@ -130,6 +134,7 @@ body {
 
 #instructionsh2 {
   margin-bottom: 40px;
+  color: white;
 }
 
 #instructionsText {

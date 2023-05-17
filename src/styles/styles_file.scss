@@ -1,48 +1,3 @@
-// $color: purple; // Define a SCSS variable
-
-// #main>h1 {
-//     border: 4px solid $color; // Use the variable we defined
-//     padding: 20px;
-// }
-
-
-// .bottom_left_bar {
-//     z-index: 5;
-// }
-
-// .title_bar {
-//     position: relative;
-//     z-index: 1;
-// }
-
-// .background {
-//     position: relative;
-//     background-color: transparent;
-//     z-index: 1;
-//     // border: 1px solid black;
-//     top: 200px; 
-//     left: 500px;
-// }
-
-// .truebackground {
-//     position: relative;
-//     height: 100%;
-//     width: 100%;
-//     background-color: rgb(247, 211, 232);
-// }
-
-// .title {
-//     position: relative;
-//     background-color: white;
-//     z-index: 2;
-// }
-
-// .canvas {
-//     position: relative;
-//     background: url("../images/interaction_environment.png");
-//     z-index: -1;
-// }
-
 body {
     background-color: rgb(203, 153, 203);
 }
@@ -86,6 +41,10 @@ body {
     margin-top: -100px;
 }
 
+#inspirationh2 {
+    color: white;
+}
+
 .scoreboard {
     display: flex;
     font-family: 'Pangolin', cursive;
@@ -112,16 +71,6 @@ body {
     text-align: center;
     color: white;
 }
-// .playerpethp {
-//     position: relative;
-//     z-index: 20;
-//     background-image: url("../images/pet_icon.png");
-//     background-size: contain;
-//     width: 150px;
-//     height: 50px;
-//     top: -150px;
-//     left: 50px;
-// }
 
 #nextarrow {
     position: relative;
@@ -132,6 +81,7 @@ body {
 
 #instructionsh2 {
     margin-bottom: 40px;
+    color: white;
 }
 
 #instructionsText {
@@ -241,12 +191,6 @@ body {
 }
 
 #backgroundmain {
-    // position: relative;
-    // margin: auto;
-    // height: 300px;
-    // display: flex;;
-    // left: 600px;
-    // top: 400px;
     z-index: 1;
 }
 
@@ -276,20 +220,6 @@ body {
     color: purple;
 }
 
-
-// #corgi {
-//     display: none;
-// }
-
-// #welcome {
-//     background-color: pink;
-//     position: relative;
-//     z-index: 50;
-//     width: 200px;
-//     height: 200px;
-//     left: 150px;
-//     top: 80px;
-// }
 
 #maintext {
     background-color: palegoldenrod;
