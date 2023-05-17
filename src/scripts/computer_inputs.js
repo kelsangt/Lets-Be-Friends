@@ -18,10 +18,10 @@ class ComputerInputs {
             ["Sing", 30],
             ["Sleep", 40],
             ["PlayfulBark", 50],
-            ["Jerky", 30],
-            ["ChewyBeef", 40],
-            ["MilkBone", 50],
-            ["ChickenSticks", 20],
+            ["Jerky", 0.2],
+            ["ChewyBeef", 0.3],
+            ["MilkBone", 0.1],
+            ["ChickenSticks", 0.5],
             ["Frisbee", -50],
             ["SqueakyBall", -30],
             ["GiraffePlush", -20],
@@ -32,7 +32,13 @@ class ComputerInputs {
         let pickedChoiceVal = choicesArray[randomIndex][1];
         
         if(this.opponentPet.hp < 300){
-            if(pickedChoiceVal < 0) {
+            if(pickedChoiceName === "Jerky" || pickedChoiceName === "ChewyBeef" || pickedChoiceName === "MilkBone" || pickedChoiceName === "ChickenSticks"){
+                let calculatedHappiness = Math.floor(this.playerPet.hp * pickedChoiceVal);
+                if (this.opponentPet.hp >= calculatedHappiness){
+                    this.opponentPet.hp -= calculatedHappiness;
+                    opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+                }
+            } else if(pickedChoiceVal < 0) {
                 if(this.opponentPet.hp >= Math.abs(pickedChoiceVal)){
                     this.opponentPet.hp += pickedChoiceVal;
                     opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;

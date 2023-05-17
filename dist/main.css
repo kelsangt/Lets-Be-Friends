@@ -577,8 +577,9 @@ body {
   height: 50px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
-  top: -50px;
+  top: -55px;
   left: 300px;
+  line-height: normal;
 }
 
 #playfulBarkDescription {
@@ -589,8 +590,9 @@ body {
   height: 50px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
-  top: -50px;
+  top: -55px;
   left: 300px;
+  line-height: normal;
 }
 
 #singDescription {
@@ -601,8 +603,9 @@ body {
   height: 50px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
-  top: -50px;
+  top: -55px;
   left: 300px;
+  line-height: normal;
 }
 
 #sleepDescription {
@@ -613,8 +616,9 @@ body {
   height: 50px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
-  top: -50px;
+  top: -55px;
   left: 300px;
+  line-height: normal;
 }
 
 #computerDanceText {
@@ -801,10 +805,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -55px;
+  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #chewyBeefDescription {
@@ -812,10 +817,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -62px;
+  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #milkBoneDescription {
@@ -823,10 +829,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -62px;
+  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #chickenSticksDescription {
@@ -834,10 +841,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -62px;
+  left: 290px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #frisbeeDescription {
@@ -845,10 +853,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -55px;
+  left: 295px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #giraffePlushDescription {
@@ -856,10 +865,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -55px;
+  left: 295px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #rubberBoneDescription {
@@ -867,10 +877,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -55px;
+  left: 295px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #squeakyBallDescription {
@@ -878,10 +889,11 @@ body {
   z-index: 3;
   width: 180px;
   height: 50px;
-  top: -50px;
-  left: 300px;
+  top: -55px;
+  left: 295px;
   font-family: Arial, Helvetica, sans-serif;
   display: none;
+  line-height: normal;
 }
 
 #corgi2 {

@@ -287,8 +287,11 @@ class UserInputs {
             this.show(jerkyText);
             this.show(nextarrow);
             this.hide(jerkyDescription);
-            this.opponentPet.hp += 30;
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            let calculatedHappinessPlayer = Math.floor(this.opponentPet.hp * 0.2);
+            if(this.playerPet.hp >= calculatedHappinessPlayer){
+                this.playerPet.hp -= calculatedHappinessPlayer;
+            } 
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -323,8 +326,11 @@ class UserInputs {
             this.show(chewyBeefText);
             this.show(nextarrow);
             this.hide(chewyBeefDescription);
-            this.opponentPet.hp += 40;
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            let calculatedHappinessPlayer = Math.floor(this.opponentPet.hp * 0.3);
+            if(this.playerPet.hp >= calculatedHappinessPlayer){
+                this.playerPet.hp -= calculatedHappinessPlayer;
+            } 
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -359,8 +365,11 @@ class UserInputs {
             this.show(milkBoneText);
             this.show(nextarrow);
             this.hide(milkBoneDescription);
-            this.opponentPet.hp += 50;
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            let calculatedHappinessPlayer = Math.floor(this.opponentPet.hp * 0.1);
+            if(this.playerPet.hp >= calculatedHappinessPlayer){
+                this.playerPet.hp -= calculatedHappinessPlayer;
+            } 
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
@@ -395,8 +404,11 @@ class UserInputs {
             this.show(chickenSticksText);
             this.show(nextarrow);
             this.hide(chickenSticksDescription);
-            this.opponentPet.hp += 20;
-            opponentScore.innerHTML = "Spot's Happiness: " + this.opponentPet.hp;
+            let calculatedHappinessPlayer = Math.floor(this.opponentPet.hp * 0.5);
+            if(this.playerPet.hp >= calculatedHappinessPlayer){
+                this.playerPet.hp -= calculatedHappinessPlayer;
+            } 
+            playerScore.innerHTML = "Fido's Happiness: " + this.playerPet.hp;
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
