@@ -141,6 +141,7 @@ class UserInputs {
             this.playerPet2.setAttribute('style',
                 'animation: shake 0.2s;'
             )
+
             
             // canvasSecond.ctx. = ; this will do animation for dancing    
         });
